@@ -1,0 +1,459 @@
+[
+
+
+
+
+	// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/gods-and-kings/
+
+	/* Ancient Era */
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": ["Can build [Land] improvements on tiles",
+		"Can build [Fishing Boats] improvements on tiles",
+		  "Automation is a primary action",
+		],
+		"cost": 45
+	},
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 70,
+		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population",
+			
+			],
+		//"hurryCostModifier": 20
+	},
+	{
+		"name": "Scout",
+		"unitType": "Civilian",
+		"movement": 3,
+		"strength": 4,
+		"cost": 15,
+		//"obsoleteTech": "Scientific Theory",
+		"uniques": [
+		"Cannot attack",
+		//"May upgrade to [Archer] through ruins-like effects", "Never appears as a Barbarian unit",
+		//"[+1] Sight <after adopting [Nature seeker]>"
+		],
+		//"promotions": ["Ignore terrain cost"],
+		"attackSound": "nonmetalhit"
+	},
+	/*{
+		"name": "Warrior",
+		"unitType": "Swordsmen",
+		"movement": 2,
+		"strength": 8,
+		"cost": 25,
+		//"obsoleteTech": "Metal Casting",
+		//"upgradesTo": "Swordsman",
+		"uniques" : [
+		],
+		"attackSound": "nonmetalhit",
+	},*/
+    {
+        "name": "Slinger", // 投石手
+        "unitType": "Archers",
+        "range": 2,
+        "movement": 2,
+        "strength": 4,
+        "rangedStrength": 4,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 20,
+        //"requiredTech": "",
+        "upgradesTo": "Archer",
+        "obsoleteTech": "Bow and arrow",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Archer", // 弓箭手
+        "unitType": "Archers",
+        "range": 2,
+        "movement": 2,
+        "strength": 5,
+        "rangedStrength": 7,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 25,
+        "requiredTech": "Bow and arrow",
+        "upgradesTo": "Composite Bowmen",
+        "obsoleteTech": "Architectural construction",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Composite Bowmen", // 复合弓兵
+        "unitType": "Archers",
+        "range": 2,
+        "movement": 2,
+        "strength": 7,
+        "rangedStrength": 11,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        "requiredTech": "Architectural construction",
+        "upgradesTo": "Crossbowmen",
+        "obsoleteTech": "Mechanics",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Crossbowmen", // 弩手
+        "unitType": "Archers",
+        "range": 2,
+        "movement": 2,
+        "strength": 12,
+        "rangedStrength": 17,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        "requiredTech": "Mechanics",
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Warrior", // 勇士
+        "unitType": "Swordsmen",
+        //"range": 2,
+        "movement": 2,
+        "strength": 8,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 25,
+        //"requiredTech": "",
+        "upgradesTo": "Swordsman",
+        "obsoleteTech": "Ironware",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Swordsman", // 剑士
+        "unitType": "Swordsmen",
+        //"range": 2,
+        "movement": 2,
+        "strength": 14,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        "requiredTech": "Ironware",
+        "upgradesTo": "Armored Warrior",
+        "obsoleteTech": "Steelmaking",
+        //"promotions": [],
+        "uniques": [
+        "Consumes [1] [Iron]",
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Armored Warrior", // 披甲战士
+        "unitType": "Swordsmen",
+        //"range": 2,
+        "movement": 2,
+        "strength": 20,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        "requiredTech": "Steelmaking",
+        "upgradesTo": "Musketeer",
+        "obsoleteTech": "Gunpowder",
+        //"promotions": [],
+        "uniques": [
+        "Consumes [1] [Iron]",
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Musketeer", // 火枪手
+        "unitType": "Gunpowder",
+        //"range": 2,
+        "movement": 2,
+        "strength": 26,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 110,
+        "requiredTech": "Gunpowder",
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Spearmen", // 矛兵
+        "unitType": "Spearmen",
+        //"range": 2,
+        "movement": 2,
+        "strength": 11,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 35,
+        "requiredTech": "Bronze ware",
+        "upgradesTo": "Pikemen",
+        "obsoleteTech": "Civil service system",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Pikemen", // 长矛兵
+        "unitType": "Spearmen",
+        //"range": 2,
+        "movement": 2,
+        "strength": 17,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 60,
+        "requiredTech": "Civil service system",
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [],
+        //"attackSound": ""
+    },
+    {
+        "name": "Cavalry", // 骑手
+        "unitType": "Light Cavalry",
+        //"range": 2,
+        "movement": 4,
+        "strength": 12,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        "requiredTech": "Stirrup",
+        "upgradesTo": "Knight",
+        "obsoleteTech": "Knighthood",
+        //"promotions": [],
+        "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "Consumes [1] [Horses]",
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Chariot Archer", // 战车射手
+        "unitType": "Light Cavalry",
+        "range": 2,
+        "movement": 4,
+        "strength": 6,
+        "rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 45,
+        "requiredTech": "Wheel",
+        "upgradesTo": "Knight",
+        "obsoleteTech": "Knighthood",
+        //"promotions": [],
+        "uniques": [
+        "Rough terrain penalty",
+        "No defensive terrain bonus",
+        "Consumes [1] [Horses]",
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Knight", // 骑士
+        "unitType": "Heavy Cavalry",
+        //"range": 2,
+        "movement": 5,
+        "strength": 17,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 90,
+        "requiredTech": "Knighthood",
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [
+        "Can move after attacking",
+        "No defensive terrain bonus",
+        "Consumes [1] [Horses]",
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Catapult", // 投石机
+        "unitType": "Siege Engines",
+        "range": 2,
+        "movement": 2,
+        "strength": 7,
+        "rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 50,
+        "requiredTech": "Architectural construction",
+        "upgradesTo": "Ballistae",
+        "obsoleteTech": "Physics",
+        //"promotions": [],
+        "uniques": [
+        "[+150]% Strength <vs cities> <when attacking>",
+		"Must set up to ranged attack",
+		"Never appears as a Barbarian unit"
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Siege Tower", // 攻程塔
+        "unitType": "Siege Engines",
+        //"range": 2,
+        "movement": 2,
+        "strength": 8,
+        //"rangedStrength": 10,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 55,
+        "requiredTech": "Architectural construction",
+        "upgradesTo": "Ballistae",
+        "obsoleteTech": "Physics",
+        //"promotions": [],
+        "uniques": [
+        "[+200]% Strength <vs cities> <when attacking>",
+		"Never appears as a Barbarian unit"
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Ballistae", // 抛石机
+        "unitType": "Siege Engines",
+        "range": 2,
+        "movement": 2,
+        "strength": 12,
+        "rangedStrength": 15,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        "requiredTech": "Physics",
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [
+        "[+150]% Strength <vs cities> <when attacking>",
+		"Must set up to ranged attack",
+		"Never appears as a Barbarian unit"
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+        "name": "Heavy Crossbow Platform", // 重型弩车
+        "unitType": "Siege Engines",
+        "range": 2,
+        "movement": 2,
+        "strength": 12,
+        "rangedStrength": 17,
+        //"replaces": "",
+        //"uniqueTo": "",
+        "cost": 80,
+        "requiredTech": "Physics",
+        //"upgradesTo": "",
+        //"obsoleteTech": "",
+        //"promotions": [],
+        "uniques": [
+        "[+50]% Strength <vs cities> <when attacking>",
+		"Never appears as a Barbarian unit"
+        
+        ],
+        //"attackSound": ""
+    },
+    {
+	"name": "Galley", // 桨战船
+	"unitType": "Short-Range Naval",
+	//"range": 2,
+	"movement": 4,
+	"strength": 10,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 30,
+	"requiredTech": "Navigation",
+	"upgradesTo": "Sailing Warship",
+	"obsoleteTech": "Sail",
+	//"promotions": [],
+	"uniques": [
+	"Cannot enter ocean tiles",
+	
+	],
+	//"attackSound": ""
+    },
+    {
+	"name": "Sailing Warship", // 风帆战船
+	"unitType": "Short-Range Naval",
+	//"range": 2,
+	"movement": 4,
+	"strength": 15,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 45,
+	"requiredTech": "Sail",
+	//"upgradesTo": "",
+	"obsoleteTech": "Long-distance navigation",
+	//"promotions": [],
+	"uniques": [
+	"Can upgrade to [Heavy Galleass] <after discovering [Astronomy]>",
+	"Can upgrade to [Light Sloop] <after discovering [Long-distance navigation]>",
+	"Cannot enter ocean tiles",
+	],
+	//"attackSound": ""
+    },
+    {
+	"name": "Heavy Galleass", // 重桨帆船
+	"unitType": "Long-Range Naval",
+	"range": 2,
+	"movement": 5,
+	"strength": 15,
+	"rangedStrength": 17,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 75,
+	"requiredTech": "Astronomy",
+	//"upgradesTo": "",
+	//"obsoleteTech": "",
+	//"promotions": [],
+	"uniques": [],
+	//"attackSound": ""
+    },
+    {
+	"name": "Light Sloop", // 轻帆船
+	"unitType": "Short-Range Naval",
+	//"range": 2,
+	"movement": 2,
+	"strength": 20,
+	//"rangedStrength": 10,
+	//"replaces": "",
+	//"uniqueTo": "",
+	"cost": 90,
+	"requiredTech": "Long-distance navigation",
+	//"upgradesTo": "",
+	//"obsoleteTech": "",
+	//"promotions": [],
+	"uniques": [],
+	//"attackSound": ""
+    }
+
+//"Can upgrade to [Missile Crusier] <after discovering [Rocketry]>",
+]

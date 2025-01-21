@@ -1,0 +1,129 @@
+[
+    {
+        "name": "Civilian",
+        "movementType": "Land"
+    },
+    {
+        "name": "Naval Civilian",
+        "movementType": "Water"
+    },
+    {
+        "name": "Air Civilian",
+        "movementType": "Air"
+    },
+    {
+    "name": "Swordsmen",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [1] [Army size]",
+    ]
+},
+{
+    "name": "Spearmen",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [1] [Army size]",
+        "[+33]% Strength <vs [Light Cavalry] units>",
+        "[+33]% Strength <vs [Heavy Cavalry] units>",
+    ]
+},
+{
+    "name": "Archers",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [1] [Army size]",
+    ]
+},
+{
+    "name": "Light Cavalry",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [1] [Army size]",
+        "[+33]% Strength <vs [Archers] units> <when attacking>",
+        "[-33]% Strength <vs cities> <when attacking>",
+    ]
+},
+{
+    "name": "Heavy Cavalry",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [1] [Army size]",
+        "[+33]% Strength <vs [Archers] units> <when defending>",
+    ]
+},
+{
+    "name": "Siege Engines",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [2] [Army size]",
+        "[-50]% Strength <vs [Swordsmen] units> <when defending>",
+    ]
+},
+{
+    "name": "Gunpowder",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [1] [Army size]",
+    ]
+},
+{
+    "name": "Fighter Aircraft",
+    "movementType": "Air",
+    "uniques": [
+        "Consumes [1] [Army size]",
+        "[+100]% Strength <vs [Bomber Aircraft] units> <when attacking>",
+    ]
+},
+{
+    "name": "Bomber Aircraft",
+    "movementType": "Air",
+    "uniques": [
+        "Consumes [1] [Army size]",
+    ]
+},
+{
+    "name": "Missiles",
+    "movementType": "Air",
+    "uniques": [
+        "Consumes [1] [Army size]",
+    ]
+},
+{
+    "name": "Short-Range Naval",
+    "movementType": "Water",
+    "uniques": [
+        "Consumes [1] [Army size]",
+    ]
+},
+{
+    "name": "Long-Range Naval",
+    "movementType": "Water",
+    "uniques": [
+        "Consumes [1] [Army size]",
+    ]
+},
+{
+    "name": "Submarines",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [1] [Army size]",
+    ]
+},
+{
+    "name": "Drones",
+    "movementType": "Land",
+    "uniques": [
+        "Consumes [2] [Army size]",
+    ]
+}
+
+
+
+
+]
+
+
+
+
+
+

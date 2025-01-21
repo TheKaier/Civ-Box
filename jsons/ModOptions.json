@@ -1,0 +1,11 @@
+{
+"constants": {
+        "maxXPfromBarbarians": 10086,
+    "pantheonBase": 100000,
+    "pantheonGrowth": 0,
+    "cityStrengthFromTechsFullMultiplier": 0.2,
+    //"Can trade civilization introductions for [0] Gold"
+    },
+    "isBaseRuleset": true,
+    
+}

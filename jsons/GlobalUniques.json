@@ -1,0 +1,88 @@
+{
+    "name": "Global uniques",
+    "uniques": [
+        "[-75]% growth [in all cities] <when between [-10] and [-1] Happiness>",
+        "Nullifies Growth [in all cities] <when below [-10] Happiness>",
+        "[-50]% [Production] [in all cities] <when below [-10] Happiness>",
+        "[-33]% Strength <for [All] units> <when below [-10] Happiness>",
+        "Cannot build [Settler] units <when below [-10] Happiness>",
+        "Rebel units may spawn <when below [-10] Happiness>",
+        "[-1] Sight <for [Embarked] units>",
+
+        // Filtering uniques must be listed here to tell RulesetValidator they're OK despite untyped
+        "Aircraft",
+        "specialize",
+        
+        
+        
+        
+        
+        
+        // TODO: Implement the uniques below
+        // "[+20]% [Culture] [in all cities] <during a golden age>",
+        // "[+20]% [Production] [in all cities] <during a golden age>",
+
+        // "[+10]% growth [in all cities] <during We Love The King Day>",
+
+        // "Nullifies All Yield <while is in resistance>",
+
+        // "[-25]% [Science] [in pupetted cities]" -- Imo cityFilters should ideally become conditionals anyway
+        // "[-25]% [Culture] [in pupetted cities]"
+
+        // "[+20]% [Production] [in cities connected via railroad]"
+        // something something unit supply
+        
+        
+        "Each city founded increases culture cost of policies [100]% less than normal",
+        "[-33]% Culture cost of adopting new Policies",
+        
+        
+        
+        
+        
+        "Provides [8] [Army size] <starting from the [Ancient era]>",
+		"Provides [6] [Army size] <starting from the [Classical era]>",
+		"Provides [6] [Army size] <starting from the [Medieval era]>",
+		/*"Provides [6] [Army size] <starting from the [Renaissance era]>",
+		"Provides [6] [Army size] <starting from the [Industrial era]>",
+		"Provides [6] [Army size] <starting from the [Modern era]>",
+		"Provides [6] [Army size] <starting from the [Atomic era]>",
+		"Provides [6] [Army size] <starting from the [Information era]>",*/
+        
+        
+        
+        
+        //<when above [14] [Degree of social development]>
+        "Instantly provides [30] [Degree of social development]",//提供初始值
+        "Provides a [Original capital] in your first [1] cities for free",//将自己的城市作为原始首都
+        "Provides [1] [Degree of social development] <when above [0] [Original capital point]>",//拥有原始首都（别人的也行）
+        "Provides [1] [Degree of social development] <when not at war> <during a Golden Age>",//国家处于和平状态，并处于黄金时代
+        "Provides [1] [Degree of social development] <when not at war>",//国家处于和平状态
+        "Provides [1] [Degree of social development] <when above [4] Happiness>",//快乐
+        "Provides [1] [Degree of social development] <when number of [Original cities point] is less than [Cities point]>",//自己所建造的城市没有被烧毁/被攻占
+
+        
+        
+        
+        
+        
+        
+        "Provides [2] [Imperial jurisdiction] <for [Emprire] Civilizations>",
+        "Provides [1] [Imperial jurisdiction] <starting from the [Ancient era]> <for [Emprire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Classical era]> <for [Emprire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Medieval era]> <for [Emprire] Civilizations>",
+		/*"Provides [1] [Imperial jurisdiction] <starting from the [Renaissance era]> <for [Emprire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Industrial era]> <for [Emprire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Modern era]> <for [Emprire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Atomic era]> <for [Emprire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Information era]> <for [Emprire] Civilizations>",*/
+        
+        
+        
+        
+        
+        "Colonize",//殖民国家
+        "Emprire",//帝国
+        
+    ]
+}

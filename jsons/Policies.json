@@ -1,0 +1,925 @@
+[
+    {
+
+        "name": "Tradition Policy",//
+
+        "era": "Ancient era",
+
+        "priorities": {
+	
+	
+
+            
+        },
+
+        "uniques": [
+"Only available <before adopting [Liberty Policy]>",
+"Free Social Policy",
+        //"Unavailable",
+	
+],
+
+        "policies": [
+
+	   {
+                "name": "Tradition",
+                "uniques": [
+                "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
+                "[+2 Culture, +2 Gold, +1 Production] [in capital] <for [Emprire] Civilizations>",
+                
+		"Provides [1] [Focal point] <for [Colonize] Civilizations>",
+		"[+2 Culture] [in capital] <for [Colonize] Civilizations>",
+		
+                ],
+                "row": 1,
+                "column": 5
+            },
+{
+    "name": "The Divine Right of Kings",
+    "uniques": [
+    "Only available <after adopting [Tradition]>",
+    "Only available <before adopting [Elder Rule]>",
+    
+    "[+1 Faith, +2 Gold, +1 Culture] <for [Emprire] Civilizations>",
+    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
+    
+    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
+    "[+1 Culture] [in all cities] <for [Colonize] Civilizations>",
+    ],
+    "row": 2,
+    "column": 2
+},//君权神授
+{
+    "name": "The Supremacy of Royal Power",
+    "uniques": [
+    "Only available <after adopting [The Divine Right of Kings]>",
+    "Only available <before adopting [Oligarchy]>",
+    
+    "[+2 Food, +1 Faith] [in capital] <for [Emprire] Civilizations>",
+    
+    "[+1 Faith, +1 Culture] <for [Colonize] Civilizations>",
+    
+    
+    ],
+    "row": 3,
+    "column": 1
+},//王权至上
+{
+    "name": "Royal Power and Divine Authority",
+    "uniques": [
+    "Only available <after adopting [The Supremacy of Royal Power]>",
+    
+    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
+    "[+1 Faith, +1 Production] from every [Shrine] <for [Emprire] Civilizations>",
+    
+    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
+    "[+1 Faith, +1 Gold] from every [Shrine] <for [Colonize] Civilizations>",
+    ],
+    "row": 4,
+    "column": 1
+},//王权与神权
+{
+    "name": "Oligarchy",
+    "uniques": [
+    "Only available <after adopting [The Divine Right of Kings]>",
+    "Only available <before adopting [The Supremacy of Royal Power]>",
+    "Units in cities cost no Maintenance <for [Emprire] Civilizations>",
+    "[+25]% Strength for cities <with a garrison> <when attacking> <for [Emprire] Civilizations>",
+    
+    "[+1 Food] per [3] population [in all cities] <for [Colonize] Civilizations>",
+    ],
+    "row": 3,
+    "column": 3
+},//寡头政治
+{
+    "name": "Ruling Group",
+    "uniques": [
+    "Only available <after adopting [Oligarchy]>",
+    
+    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
+    "[+15]% growth [in capital]",
+    "[+2 Food, +2 Culture] [in capital]",
+    
+    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
+    "[+1 Science, +1 Culture] per [3] population [in capital] <for [Colonize] Civilizations>",
+    ],
+    "row": 4,
+    "column": 3
+},//统治集团
+{
+    "name": "Hierarchy System",
+    "uniques": [
+    "Only available <after adopting [Tradition]>",
+    "Provides the cheapest [Culture] building in your first [4] cities for free",
+    
+    ],
+    "row": 2,
+    "column": 5
+},//等级制度
+{
+    "name": "Social Morality",
+    "uniques": [
+    "Only available <after adopting [Hierarchy System]>",
+    "[-15]% Culture cost of natural border growth [in all cities]",
+    "[+1 Culture] [in all cities]",
+    ],
+    "row": 3,
+    "column": 5
+},//社会道德
+{
+    "name": "Magnificent and Splendid",
+    "uniques": [
+    "Only available <after adopting [Social Morality]>",
+    "[+20]% Production when constructing [All] wonders [in all cities]",
+    "[+1 Happiness, +1 Culture, +1 Gold] per [5] population [in all cities]",
+    ],
+    "row": 4,
+    "column": 5
+},//雄伟壮丽
+{
+    "name": "Elder Rule",
+    "uniques": [
+    "Only available <after adopting [Tradition]>",
+    "Only available <before adopting [The Divine Right of Kings]>",
+    
+    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
+    "[-25]% construction time for [All] improvements <for [Emprire] Civilizations>",
+    
+    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
+    "[+5]% Production when constructing [All] buildings [in all cities] <for [Colonize] Civilizations>",
+    "[+2 Production] [in capital]",
+    ],
+    "row": 2,
+    "column": 8
+},//长老统治
+{
+    "name": "Gentry Class",
+    "uniques": [
+    "Only available <after adopting [Elder Rule]>",
+    "Only available <before adopting [Scholar-Official Politics]>",
+    
+    "[+15]% growth [in capital] <for [Emprire] Civilizations>",
+    "[+15]% growth [in all cities] <for [Emprire] Civilizations>",
+    
+    "[+2 Culture, +2 Science] [in capital] <for [Colonize] Civilizations>",
+    ],
+    "row": 3,
+    "column": 7
+},//缙绅阶层
+{
+    "name": "Noble Privileges",
+    "uniques": [
+    "Only available <after adopting [Gentry Class]>",
+    
+    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
+    "Provides a [Aqueduct] in your first [4] cities for free <for [Emprire] Civilizations>",
+    
+    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
+    "[+1 Happiness, +1 Gold] per [3] population [in capital] <for [Colonize] Civilizations>",
+    ],
+    "row": 4,
+    "column": 7
+},//贵族特权
+{
+    "name": "Scholar-Official Politics",
+    "uniques": [
+    "Only available <after adopting [Elder Rule]>",
+    "Only available <before adopting [Gentry Class]>",
+    
+    "[+1 Culture] [in all cities] <for [Emprire] Civilizations>",
+    
+    "[+1 Science] [in all cities] <for [Colonize] Civilizations>",
+    ],
+    "row": 3,
+    "column": 9
+},//士族政治
+{
+    "name": "Clan-Based Rivalry",
+    "uniques": [
+    "Only available <after adopting [Scholar-Official Politics]>",
+    
+    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
+    "Provides the cheapest [Gold] building in your first [4] cities for free <for [Emprire] Civilizations>",
+    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
+    "Provides the cheapest [Science] building in your first [4] cities for free <for [Colonize] Civilizations>",
+    ],
+    "row": 4,
+    "column": 9
+}//门阀对立
+
+
+
+
+	{
+
+                "name": "Tradition Policy Complete",
+
+                "uniques": [
+
+	
+
+	
+
+                ]
+
+            }
+
+        ]
+
+    },
+
+
+
+
+
+
+
+
+{
+
+        "name": "Liberty Policy",//
+
+        "era": "Ancient era",
+
+        "priorities": {
+	
+	
+
+            
+        },
+
+        "uniques": [
+"Only available <before adopting [Tradition Policy]>",
+        //"Unavailable",
+	"Free Social Policy",
+],
+
+        "policies": [
+
+	   {
+                "name": "Liberty",
+                "uniques": [
+		
+		
+		
+                ],
+                "row": 1,
+                "column": 5
+            },
+{
+    "name": "Citizens'Rights",
+    "uniques": [
+    "Only available <after adopting [Liberty]>",
+    "Only available <before adopting [Democratic Politics]>",
+    
+    ],
+    "row": 2,
+    "column": 2
+},//公民权利
+{
+    "name": "Elite Politics",
+    "uniques": [
+    "Only available <after adopting [Citizens'Rights]>"
+    "Only available <before adopting [Citizens'Assembly]>",
+    
+    ],
+    "row": 3,
+    "column": 1
+},//精英政治
+{
+    "name": "Republican System",
+    "uniques": [
+    "Only available <after adopting [Elite Politics]>",
+    ],
+    "row": 4,
+    "column": 1
+},//共和制度
+{
+    "name": "Citizens'Assembly",
+    "uniques": [
+    "Only available <after adopting [Citizens'Rights]>",
+    "Only available <before adopting [Elite Politics]>",
+    
+    ],
+    "row": 3,
+    "column": 3
+},//公民大会
+{
+    "name": "Factional Disputes",
+    "uniques": [
+    "Only available <after adopting [Citizens'Assembly]>",
+    ],
+    "row": 4,
+    "column": 3
+},//派别分歧
+{
+    "name": "Small States with Few People",
+    "uniques": [
+    "Only available <after adopting [Liberty]>",
+    ],
+    "row": 2,
+    "column": 5
+},//小国寡民
+{
+    "name": "Citizenship Scope",
+    "uniques": [
+    "Only available <after adopting [Small States with Few People]>",
+    ],
+    "row": 3,
+    "column": 5
+},//公民范围
+{
+    "name": "Union of City-States",
+    "uniques": [
+    "Only available <after adopting [Citizenship Scope]>",
+    ],
+    "row": 4,
+    "column": 5
+},//联合城邦
+{
+    "name": "Collective Deliberation",
+    "uniques": [
+    "Only available <after adopting [Liberty]>",
+    "Only available <before adopting [Citizens'Rights]>",
+    
+    ],
+    "row": 2,
+    "column": 8
+},//集体议事
+{
+    "name": "Democratic Politics",
+    "uniques": [
+    "Only available <after adopting [Collective Deliberation]>",
+    "Only available <before adopting [Independent Public Opinion]>",
+    
+    ],
+    "row": 3,
+    "column": 7
+},//民主政治
+{
+    "name": "Unanimity",
+    "uniques": [
+    "Only available <after adopting [Democratic Politics]>",
+    ],
+    "row": 4,
+    "column": 7
+},//全体一致
+{
+    "name": "Independent Public Opinion",
+    "uniques": [
+    "Only available <after adopting [Collective Deliberation]>",
+    "Only available <before adopting [Democratic Politics]>",
+    
+    ],
+    "row": 3,
+    "column": 9
+},//自主民意
+{
+    "name": "Majority Opinion",
+    "uniques": [
+    "Only available <after adopting [Independent Public Opinion]>",
+    ],
+    "row": 4,
+    "column": 9
+}//多数意见
+
+
+
+
+	{
+
+                "name": "Liberty Policy Complete",
+
+                "uniques": [
+
+	
+
+	
+
+                ]
+
+            }
+
+        ]
+
+    },
+
+
+
+
+{
+
+        "name": "Feudal Policy",//
+
+        "era": "Medieval era",
+
+        "priorities": {
+	
+	
+
+            
+        },
+
+        "uniques": [
+"Only available <before adopting [Enlightenment Policy]>",
+        //"Unavailable",
+	"Free Social Policy",
+],
+
+        "policies": [
+
+	   {
+                "name": "Feudal",
+                "uniques": [
+		
+		
+		
+                ],
+                "row": 1,
+                "column": 5
+            },
+{
+    "name": "Rigid Hierarchy",
+    "uniques": [
+    "Only available <after adopting [Feudal]>",
+    "Only available <before adopting [Scholar Group]>",
+    
+    ],
+    "row": 2,
+    "column": 2
+},//等级森严
+{
+    "name": "Autocratic Rule",
+    "uniques": [
+    "Only available <after adopting [Rigid Hierarchy]>",
+    "Only available <before adopting [Offering and Accepting Advice]>",
+    
+    ],
+    "row": 3,
+    "column": 1
+},//独断朝纲
+{
+    "name": "Eternal Emperor",
+    "uniques": [
+    "Only available <after adopting [Autocratic Rule]>",
+    ],
+    "row": 4,
+    "column": 1
+},//万古一帝
+{
+    "name": "Offering and Accepting Advice",
+    "uniques": [
+    "Only available <after adopting [Rigid Hierarchy]>",
+    "Only available <before adopting [Autocratic Rule]>",
+    
+    ],
+    "row": 3,
+    "column": 3
+},//进谏纳谏
+{
+    "name": "Core of the Empire",
+    "uniques": [
+    "Only available <after adopting [Offering and Accepting Advice]>",
+    ],
+    "row": 4,
+    "column": 3
+},//帝国核心
+{
+    "name": "Centralization of Power",
+    "uniques": [
+    "Only available <after adopting [Feudal]>",
+    ],
+    "row": 2,
+    "column": 5
+},//中央集权
+{
+    "name": "Land Consolidation",
+    "uniques": [
+    "Only available <after adopting [Centralization of Power]>",
+    ],
+    "row": 3,
+    "column": 5
+},//土地兼并
+{
+    "name": "Dumbing Down the Masses",
+    "uniques": [
+    "Only available <after adopting [Land Consolidation]>",
+    ],
+    "row": 4,
+    "column": 5
+},//愚化民众
+{
+    "name": "Scholar Group",
+    "uniques": [
+    "Only available <after adopting [Feudal]>",
+    "Only available <before adopting [Rigid Hierarchy]>",
+    
+    
+    ],
+    "row": 2,
+    "column": 8
+},//士人群体
+{
+    "name": "Ideological Suppression",
+    "uniques": [
+    "Only available <after adopting [Scholar Group]>",
+    "Only available <before adopting [Imperial Examination for Recruitment]>",
+    
+    ],
+    "row": 3,
+    "column": 7
+},//思想禁锢
+{
+    "name": "Eternal Empire",
+    "uniques": [
+    "Only available <after adopting [Ideological Suppression]>",
+    ],
+    "row": 4,
+    "column": 7
+},//帝国永存
+{
+    "name": "Imperial Examination for Recruitment",
+    "uniques": [
+    "Only available <after adopting [Scholar Group]>",
+    "Only available <before adopting [Ideological Suppression]>",
+    
+    ],
+    "row": 3,
+    "column": 9
+},//科举取士
+{
+    "name": "Feudal Bureaucracy",
+    "uniques": [
+    "Only available <after adopting [Imperial Examination for Recruitment]>",
+    ],
+    "row": 4,
+    "column": 9
+}//封建官僚
+
+
+
+
+	{
+
+                "name": "Feudal Policy Complete",
+
+                "uniques": [
+
+	
+
+	
+
+                ]
+
+            }
+
+        ]
+
+    },
+
+{
+
+        "name": "Enlightenment Policy",//
+
+        "era": "Medieval era",
+
+        "priorities": {
+	
+	
+
+            
+        },
+
+        "uniques": [
+"Only available <before adopting [Feudal Policy]>",
+        //"Unavailable",
+	"Free Social Policy",
+],
+
+        "policies": [
+
+	   {
+                "name": "Enlightenment",
+                "uniques": [
+		
+		
+		
+                ],
+                "row": 1,
+                "column": 5
+            },
+{
+    "name": "Rationalism",
+    "uniques": [
+    "Only available <after adopting [Enlightenment]>",
+    "Only available <before adopting [Humanism]>",
+    
+    ],
+    "row": 2,
+    "column": 2
+},//理性主义
+{
+    "name": "Professional Scholars",
+    "uniques": [
+    "Only available <after adopting [Rationalism]>",
+    "Only available <before adopting [Natural Science]>",
+    
+    ],
+    "row": 3,
+    "column": 1
+},//专业学者
+{
+    "name": "Supremacy of Science",
+    "uniques": [
+    "Only available <after adopting [Professional Scholars]>",
+    ],
+    "row": 4,
+    "column": 1
+},//科学至上
+{
+    "name": "Natural Science",
+    "uniques": [
+    "Only available <after adopting [Rationalism]>",
+    "Only available <before adopting [Professional Scholars]>",
+    
+    ],
+    "row": 3,
+    "column": 3
+},//自然科学
+{
+    "name": "Elimination of the Unknown",
+    "uniques": [
+    "Only available <after adopting [Natural Science]>",
+    ],
+    "row": 4,
+    "column": 3
+},//消去未知
+{
+    "name": "Personnel",
+    "uniques": [
+    "Only available <after adopting [Enlightenment]>",
+    ],
+    "row": 2,
+    "column": 5
+},//人事
+{
+    "name": "Geography",
+    "uniques": [
+    "Only available <after adopting [Personnel]>",
+    ],
+    "row": 3,
+    "column": 5
+},//地理
+{
+    "name": "Astronomy",
+    "uniques": [
+    "Only available <after adopting [Geography]>",
+    ],
+    "row": 4,
+    "column": 5
+},//天文
+{
+    "name": "Humanism",
+    "uniques": [
+    "Only available <after adopting [Enlightenment]>",
+    "Only available <before adopting [Rationalism]>",
+    
+    ],
+    "row": 2,
+    "column": 8
+},//人文主义
+{
+    "name": "Value of the Present World",
+    "uniques": [
+    "Only available <after adopting [Humanism]>",
+    "Only available <before adopting [Liberal Thought]>",
+    
+    ],
+    "row": 3,
+    "column": 7
+},//现世价值
+{
+    "name": "Secularism",
+    "uniques": [
+    "Only available <after adopting [Value of the Present World]>",
+    ],
+    "row": 4,
+    "column": 7
+},//世俗主义
+{
+    "name": "Liberal Thought",
+    "uniques": [
+    "Only available <after adopting [Humanism]>",
+    "Only available <before adopting [Value of the Present World]>",
+    
+    
+    ],
+    "row": 3,
+    "column": 9
+},//自由思想
+{
+    "name": "Free Cities",
+    "uniques": [
+    "Only available <after adopting [Liberal Thought]>",
+    ],
+    "row": 4,
+    "column": 9
+}//自由城市
+
+
+
+
+	{
+
+                "name": "Enlightenment Policy Complete",
+
+                "uniques": [
+
+	
+
+	
+
+                ]
+
+            }
+
+        ]
+
+    },
+
+
+
+
+{
+
+        "name": "Military Policy",//
+
+        "era": "Classical era",
+
+        "priorities": {
+	
+	
+
+            
+        },
+
+        "uniques": [
+
+        //"Unavailable",
+	
+],
+
+        "policies": [
+
+	   {
+                "name": "Military",
+                "uniques": [
+		
+		
+		
+                ],
+                "row": 1,
+                "column": 3
+            },
+{
+    "name": "Drill",
+    "uniques": [
+    "Only available <after adopting [Military]>",
+    ],
+    "row": 2,
+    "column": 1
+},//操练
+{
+    "name": "Military Merit System",
+    "uniques": [
+    "Only available <after adopting [Drill]>",
+    ],
+    "row": 3,
+    "column": 1
+},//军功制
+{
+    "name": "Discipline",
+    "uniques": [
+    "Only available <after adopting [Military]>",
+    ],
+    "row": 2,
+    "column": 5
+},//纪律
+{
+    "name": "Combat Spirit",
+    "uniques": [
+    "Only available <after adopting [Discipline]>",
+    ],
+    "row": 3,
+    "column": 5
+}//战斗血性
+
+
+
+
+	{
+
+                "name": "Military Policy Complete",
+
+                "uniques": [
+
+	
+
+	
+
+                ]
+
+            }
+
+        ]
+
+    },
+
+
+
+
+{
+
+        "name": "Business Policy",//
+
+        "era": "Classical era",
+
+        "priorities": {
+	
+	
+
+            
+        },
+
+        "uniques": [
+
+        //"Unavailable",
+	
+],
+
+        "policies": [
+
+	   {
+                "name": "Business",
+                "uniques": [
+		
+		
+		
+                ],
+                "row": 1,
+                "column": 3
+            },
+{
+    "name": "Coastal Trade",
+    "uniques": [
+    "Only available <after adopting [Business]>",
+    ],
+    "row": 2,
+    "column": 1
+},//沿海贸易
+{
+    "name": "Oceanic Exploration",
+    "uniques": [
+    "Only available <after adopting [Coastal Trade]>",
+    ],
+    "row": 3,
+    "column": 1
+},//远洋探索
+{
+    "name": "Continental Trade",
+    "uniques": [
+    "Only available <after adopting [Business]>",
+    ],
+    "row": 2,
+    "column": 5
+},//大陆贸易
+{
+    "name": "Penetration into the Interior",
+    "uniques": [
+    "Only available <after adopting [Continental Trade]>",
+    ],
+    "row": 3,
+    "column": 5
+}//深入内陆
+
+
+
+
+	{
+
+                "name": "Business Policy Complete",
+
+                "uniques": [
+
+	
+
+	
+
+                ]
+
+            }
+
+        ]
+
+    },
+]

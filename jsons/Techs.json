@@ -1,0 +1,398 @@
+[
+	{
+        "columnNumber": 0,
+        "era": "Ancient era",
+        "techCost": 25,
+        "buildingCost": 40,
+        "wonderCost": 100,
+        "techs": [
+{
+"name":"Agriculture",//
+"row":5,
+"quote":"",
+"uniques":[
+"Starting tech",
+
+]
+},
+]
+    },
+
+
+
+{
+        "columnNumber": 1,
+        "era": "Ancient era",
+        "techCost": 25,
+        "buildingCost": 40,
+        "wonderCost": 100,
+        "techs": [
+{
+"name":"Astrology",//占星术
+"row":1,
+"prerequisites":["Agriculture"],
+"quote":"",
+"uniques":[
+"Enables embarkation for land units",
+
+]
+},
+{
+"name":"Pottery",//制陶
+"row":3,
+"prerequisites":["Agriculture"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Domestication",//驯养
+"row":5,
+"prerequisites":["Agriculture"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Bow and arrow",//弓箭
+"row":6,
+"prerequisites":["Agriculture"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Mining",//采矿
+"row":8,
+"prerequisites":["Agriculture"],
+"quote":"",
+"uniques":[]
+},
+]
+    },
+
+
+
+
+{
+        "columnNumber": 2,
+        "era": "Ancient era",
+        "techCost": 40,
+        "buildingCost": 50,
+        "wonderCost": 100,
+        "techs": [
+{
+"name":"Navigation",//航行
+"row":1,
+"prerequisites":["Astrology"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Calendar",//历法
+"row":2,
+"prerequisites":["Astrology"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Writing",//园艺
+"row":3,
+"prerequisites":["Pottery"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Hunting",//捕猎
+"row":5,
+"prerequisites":["Domestication","Bow and arrow"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Wheel",//轮子
+"row":6,
+"prerequisites":["Bow and arrow"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Bricklaying",//砌砖
+"row":8,
+"prerequisites":["Mining"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Bronze ware",//青铜器
+"row":9,
+"prerequisites":["Mining"],
+"quote":"",
+"uniques":[]
+},
+]
+    },
+
+
+
+
+{
+        "columnNumber": 3,
+        "era": "Classical era",
+        "techCost": 60,
+        "buildingCost": 60,
+        "wonderCost": 150,
+        "techs": [
+{
+"name":"Sail",//风帆
+"row":1,
+"prerequisites":["Navigation"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Philosophy",//哲学
+"row":2,
+"prerequisites":["Calendar","Writing"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Drama",//戏剧
+"row":3,
+"prerequisites":["Writing"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Stirrup",//马镫
+"row":5,
+"prerequisites":["Hunting","Wheel"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Monetary system",//货币制度
+"row":6,
+"prerequisites":["Wheel"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Architectural construction",//建筑构造学
+"row":7,
+"prerequisites":["Wheel","Bricklaying"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Ironware",//铁器
+"row":9,
+"prerequisites":["Bronze ware"],
+"quote":"",
+"uniques":[]
+},
+]
+    },
+
+
+
+
+{
+        "columnNumber": 4,
+        "era": "Classical era",
+        "techCost": 100,
+        "buildingCost": 60,
+        "wonderCost": 150,
+        "techs": [
+{
+"name":"Theology",//神学
+"row":2,
+"prerequisites":["Philosophy","Drama"],
+"quote":"",
+"uniques":[
+"Gain enough Faith for [33]% of a Great Prophet",
+
+]
+},
+{
+"name":"Civil service system",//文官制度
+"row":4,
+"prerequisites":["Drama","Stirrup"],
+"quote":"",
+"uniques":[
+"[1] free [Worker] units appear",
+"Empire enters a [5]-turn Golden Age <if no other Civilization has adopted this>",
+
+]
+},
+{
+"name":"Literature and art",//文艺
+"row":5,
+"prerequisites":["Drama","Stirrup"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Guild",//行会
+"row":6,
+"prerequisites":["Monetary system"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Engineering",//工程学
+"row":7,
+"prerequisites":["Architectural construction"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Metal casting",//金属铸造
+"row":8,
+"prerequisites":["Architectural construction","Ironware"],
+"quote":"",
+"uniques":[
+//"Free [Great General] appears",
+
+]
+},
+]
+    },
+
+
+
+
+
+{
+        "columnNumber": 5,
+        "era": "Medieval era",
+        "techCost": 160,
+        "buildingCost": 80,
+        "wonderCost": 180,
+        "techs": [
+{
+"name":"Astronomy",//天文学
+"row":1,
+"prerequisites":["Sail","Theology"],
+"quote":"",
+"uniques":[
+"Enables [Embarked] units to enter ocean tiles",
+
+
+]
+},
+{
+"name":"Pedagogy",//教育学
+"row":3,
+"prerequisites":["Theology","Civil service system"],
+"quote":"",
+"uniques":[
+"Enables Research agreements",
+
+
+]
+},
+{
+"name":"Empire",//帝国
+"row":4,
+"prerequisites":["Civil service system","Literature and art"],
+"quote":"",
+"uniques":[
+"Enables Defensive Pacts",
+"Enables Open Borders agreements",
+
+"Empire enters a [5]-turn Golden Age <if no other Civilization has adopted this>",
+]
+},
+{
+"name":"Knighthood",//骑士制度
+"row":6,
+"prerequisites":["Literature and art","Guild","Engineering"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Mechanics",//机械
+"row":7,
+"prerequisites":["Engineering","Metal casting"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Physics",//物理学
+"row":8,
+"prerequisites":["Metal casting"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Steelmaking",//炼钢
+"row":9,
+"prerequisites":["Metal casting"],
+"quote":"",
+"uniques":[]
+},
+]
+    },
+
+
+
+
+{
+        "columnNumber": 6,
+        "era": "Medieval era",
+        "techCost": 300,
+        "buildingCost": 100,
+        "wonderCost": 250,
+        "techs": [
+{
+"name":"Long-distance navigation",//远洋航行
+"row":2,
+"prerequisites":["Astronomy","Pedagogy"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Acoustics",//声学
+"row":3,
+"prerequisites":["Pedagogy","Empire"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Economics",//经济学
+"row":4,
+"prerequisites":["Empire","Knighthood"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Literature",//文学
+"row":6,
+"prerequisites":["Knighthood","Mechanics"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Printing",//印刷术
+"row":7,
+"prerequisites":["Mechanics"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Metallurgy",//冶金学
+"row":8,
+"prerequisites":["Mechanics","Physics"],
+"quote":"",
+"uniques":[]
+},
+{
+"name":"Gunpowder",//火药
+"row":9,
+"prerequisites":["Steelmaking"],
+"quote":"",
+"uniques":[]
+},
+]
+    },
+
+]
