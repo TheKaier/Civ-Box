@@ -4,7 +4,7 @@
         "era": "Ancient era",
         "techCost": 25,
         "buildingCost": 40,
-        "wonderCost": 100,
+        "wonderCost": 120,
         "techs": [
 {
 "name":"Agriculture",//
@@ -12,7 +12,7 @@
 "quote":"",
 "uniques":[
 "Starting tech",
-
+"Provides [1] [Tech point]",
 ]
 },
 ]
@@ -25,7 +25,7 @@
         "era": "Ancient era",
         "techCost": 25,
         "buildingCost": 40,
-        "wonderCost": 100,
+        "wonderCost": 120,
         "techs": [
 {
 "name":"Astrology",//占星术
@@ -34,7 +34,7 @@
 "quote":"",
 "uniques":[
 "Enables embarkation for land units",
-
+"Provides [1] [Tech point]",
 ]
 },
 {
@@ -42,28 +42,36 @@
 "row":3,
 "prerequisites":["Agriculture"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Domestication",//驯养
 "row":5,
 "prerequisites":["Agriculture"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Bow and arrow",//弓箭
 "row":6,
 "prerequisites":["Agriculture"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Mining",//采矿
 "row":8,
 "prerequisites":["Agriculture"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 ]
     },
@@ -76,56 +84,70 @@
         "era": "Ancient era",
         "techCost": 40,
         "buildingCost": 50,
-        "wonderCost": 100,
+        "wonderCost": 120,
         "techs": [
 {
 "name":"Navigation",//航行
 "row":1,
 "prerequisites":["Astrology"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Calendar",//历法
 "row":2,
 "prerequisites":["Astrology"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Writing",//园艺
 "row":3,
 "prerequisites":["Pottery"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Hunting",//捕猎
 "row":5,
 "prerequisites":["Domestication","Bow and arrow"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Wheel",//轮子
 "row":6,
 "prerequisites":["Bow and arrow"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Bricklaying",//砌砖
 "row":8,
 "prerequisites":["Mining"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Bronze ware",//青铜器
 "row":9,
 "prerequisites":["Mining"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 ]
     },
@@ -145,49 +167,69 @@
 "row":1,
 "prerequisites":["Navigation"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Philosophy",//哲学
 "row":2,
 "prerequisites":["Calendar","Writing"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Drama",//戏剧
 "row":3,
 "prerequisites":["Writing"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Stirrup",//马镫
 "row":5,
 "prerequisites":["Hunting","Wheel"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Monetary system",//货币制度
 "row":6,
 "prerequisites":["Wheel"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Architectural construction",//建筑构造学
 "row":7,
 "prerequisites":["Wheel","Bricklaying"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Ironware",//铁器
 "row":9,
 "prerequisites":["Bronze ware"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
+},
+{
+"name":"Classical era",//古典科技
+"row":10,
+"quote":"",
+"uniques":["Unavailable",]
 },
 ]
     },
@@ -209,7 +251,7 @@
 "quote":"",
 "uniques":[
 "Gain enough Faith for [33]% of a Great Prophet",
-
+"Provides [1] [Tech point]",
 ]
 },
 {
@@ -220,7 +262,7 @@
 "uniques":[
 "[1] free [Worker] units appear",
 "Empire enters a [5]-turn Golden Age <if no other Civilization has adopted this>",
-
+"Provides [1] [Tech point]",
 ]
 },
 {
@@ -228,21 +270,27 @@
 "row":5,
 "prerequisites":["Drama","Stirrup"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Guild",//行会
 "row":6,
 "prerequisites":["Monetary system"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Engineering",//工程学
 "row":7,
 "prerequisites":["Architectural construction"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Metal casting",//金属铸造
@@ -251,7 +299,7 @@
 "quote":"",
 "uniques":[
 //"Free [Great General] appears",
-
+"Provides [1] [Tech point]",
 ]
 },
 ]
@@ -275,7 +323,7 @@
 "quote":"",
 "uniques":[
 "Enables [Embarked] units to enter ocean tiles",
-
+"Provides [1] [Tech point]",
 
 ]
 },
@@ -286,7 +334,7 @@
 "quote":"",
 "uniques":[
 "Enables Research agreements",
-
+"Provides [1] [Tech point]",
 
 ]
 },
@@ -298,7 +346,7 @@
 "uniques":[
 "Enables Defensive Pacts",
 "Enables Open Borders agreements",
-
+"Provides [1] [Tech point]",
 "Empire enters a [5]-turn Golden Age <if no other Civilization has adopted this>",
 ]
 },
@@ -307,28 +355,42 @@
 "row":6,
 "prerequisites":["Literature and art","Guild","Engineering"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Mechanics",//机械
 "row":7,
 "prerequisites":["Engineering","Metal casting"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Physics",//物理学
 "row":8,
 "prerequisites":["Metal casting"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Steelmaking",//炼钢
 "row":9,
 "prerequisites":["Metal casting"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
+},
+{
+"name":"Medieval era",//中古科技
+"row":10,
+"quote":"",
+"uniques":["Unavailable",]
 },
 ]
     },
@@ -348,49 +410,63 @@
 "row":2,
 "prerequisites":["Astronomy","Pedagogy"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Acoustics",//声学
 "row":3,
 "prerequisites":["Pedagogy","Empire"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Economics",//经济学
 "row":4,
 "prerequisites":["Empire","Knighthood"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Literature",//文学
 "row":6,
 "prerequisites":["Knighthood","Mechanics"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Printing",//印刷术
 "row":7,
 "prerequisites":["Mechanics"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Metallurgy",//冶金学
 "row":8,
 "prerequisites":["Mechanics","Physics"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 {
 "name":"Gunpowder",//火药
 "row":9,
 "prerequisites":["Steelmaking"],
 "quote":"",
-"uniques":[]
+"uniques":[
+"Provides [1] [Tech point]",
+]
 },
 ]
     },

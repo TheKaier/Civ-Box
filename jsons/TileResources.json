@@ -7,8 +7,8 @@
 		"food": 1,
 		"improvement": "Pasture",
 		"improvementStats": {"production": 1},
-		"uniques": ["Generated on every [18] tiles <in [{Featureless} {Grassland}] tiles>",
-					"Generated on every [22] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"]
+		"uniques": ["Generated on every [15] tiles <in [{Featureless} {Grassland}] tiles>",
+					"Generated on every [17] tiles <in [{Featureless} {Grassland}] tiles> <in [Hill] Regions>"]
 	},
 	{
 		"name": "Sheep",
@@ -17,8 +17,8 @@
 		"food": 1,
 		"improvement": "Pasture",
 		"improvementStats": {"food": 1},
-		"uniques": ["Generated on every [13] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
-					"Generated on every [10] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]> <in tiles without [Fresh Water]> <in [Hill] Regions>"]
+		"uniques": ["Generated on every [10] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
+					"Generated on every [8] tiles <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]> <in tiles without [Fresh Water]> <in [Hill] Regions>"]
 	},
 	{
 		"name": "Deer",
@@ -28,11 +28,11 @@
 		"improvement": "Camp",
 		"improvementStats": {"production": 1},
 		"uniques": ["Generated on every [8] tiles <in [{Tundra} {Forest}] tiles>",
-					"Generated on every [12] tiles <in [{Featureless} {Tundra}] tiles>",
-					"Generated on every [25] tiles <in [{Plains} {Forest}] tiles> <in tiles without [Hill]>",
-					"Generated on every [25] tiles <in [{Grassland} {Forest}] tiles> <in tiles without [Hill]>",
-					"Generated on every [16] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
-					"Generated on every [28] tiles <in [Forest] tiles> <in [Hill] Regions>"]
+					"Generated on every [10] tiles <in [{Featureless} {Tundra}] tiles>",
+					"Generated on every [20] tiles <in [{Plains} {Forest}] tiles> <in tiles without [Hill]>",
+					"Generated on every [20] tiles <in [{Grassland} {Forest}] tiles> <in tiles without [Hill]>",
+					"Generated on every [13] tiles <in [{Featureless} {Tundra}] tiles> <in [Hill] Regions>",
+					"Generated on every [24] tiles <in [Forest] tiles> <in [Hill] Regions>"]
 	},
 	{
 		"name": "Bananas",
@@ -41,8 +41,8 @@
 		"food": 1,
 		"improvement": "Plantation",
 		"improvementStats": {"food": 2,"production": -1,"gold": -1},
-		"uniques": ["Generated on every [14] tiles <in [Jungle] tiles>",
-					"Generated on every [16] tiles <in [Jungle] tiles> <in [Hill] Regions>"]
+		"uniques": ["Generated on every [12] tiles <in [Jungle] tiles>",
+					"Generated on every [14] tiles <in [Jungle] tiles> <in [Hill] Regions>"]
 	},
 	{
 		"name": "Wheat",
@@ -50,10 +50,10 @@
 		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"], // Desert only if fresh water
 		"food": 1,
 		"improvement": "Farm",
-		"uniques": ["Generated on every [27] tiles <in [{Featureless} {Plains}] tiles>",
-					"Generated on every [10] tiles <in [{Desert} {Fresh Water}] tiles> <in tiles without [Hill]>",
-					"Generated on every [20] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
-					"Generated on every [20] tiles <in [{Fresh Water} {Desert}] tiles> <in tiles without [Hill]> <in [Hill] Regions>"]
+		"uniques": ["Generated on every [22] tiles <in [{Featureless} {Plains}] tiles>",
+					"Generated on every [8] tiles <in [{Desert} {Fresh Water}] tiles> <in tiles without [Hill]>",
+					"Generated on every [17] tiles <in [{Featureless} {Plains}] tiles> <in [Hill] Regions>",
+					"Generated on every [17] tiles <in [{Fresh Water} {Desert}] tiles> <in tiles without [Hill]> <in [Hill] Regions>"]
 	},
 	{
 		"name": "Stone",
@@ -62,9 +62,9 @@
 		"production": 1,
 		"improvement": "Quarry",
 		"improvementStats": {"production": 1},
-		"uniques": ["Generated on every [20] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
-					"Generated on every [15] tiles <in [{Featureless} {Tundra}] tiles>",
-					"Generated on every [19] tiles <in [{Featureless} {Desert}] tiles>"]
+		"uniques": ["Generated on every [15] tiles <in [{Featureless} {Grassland}] tiles> <in tiles without [Fresh Water]>",
+					"Generated on every [12] tiles <in [{Featureless} {Tundra}] tiles>",
+					"Generated on every [15] tiles <in [{Featureless} {Desert}] tiles>"]
 	},
 	{
 		"name": "Fish",
@@ -72,7 +72,7 @@
 		"terrainsCanBeFoundOn": ["Coast"],
 		"food": 1,
 		"improvement": "Fishing Boats",
-		"uniques": ["Generated on every [10] tiles <in [{Featureless} {Coast}] tiles>"]
+		"uniques": ["Generated on every [8] tiles <in [{Featureless} {Coast}] tiles>"]
 	},
 	
 	{
@@ -551,7 +551,7 @@
 		"name": "Original capital point",//原始首都证明
 		"resourceType": "Strategic",
 		"uniques": [
-		//"Cannot be traded"//不能交易
+		"Cannot be traded"//不能交易
 		//"Stockpiled"//库存
 		"Not shown on world screen",//不显示
 		]
@@ -560,7 +560,7 @@
 		"name": "Original cities point",//原始城市证明
 		"resourceType": "Strategic",
 		"uniques": [
-		//"Cannot be traded"//不能交易
+		"Cannot be traded"//不能交易
 		//"Stockpiled"//库存
 		"Not shown on world screen",//不显示
 		]
@@ -569,10 +569,61 @@
 		"name": "Cities point",//城市证明
 		"resourceType": "Strategic",
 		"uniques": [
-		//"Cannot be traded"//不能交易
+		"Cannot be traded"//不能交易
 		//"Stockpiled"//库存
 		"Not shown on world screen",//不显示
 		]
 	},
+		{
+		"name": "Tech point",//研发科技等级
+		"resourceType": "Strategic",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		//"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
+	{
+		"name": "War support",//战争支持
+		"resourceType": "Strategic",
+		"uniques": [
+		//"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
+	{
+		"name": "Food Caravan",//粮食商队
+		"resourceType": "Strategic",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		//"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
+	{
+		"name": "Planned value",//策划值
+		"resourceType": "Strategic",
+		"uniques": [
+		//"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
+	{
+		"name": "Confrontation value",//对抗值
+		"resourceType": "Strategic",
+		"uniques": [
+		//"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
+	
+	
+	
+	
+	
+	
 	
 ]

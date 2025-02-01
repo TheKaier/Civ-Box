@@ -1,18 +1,26 @@
 {
     "name": "Global uniques",
     "uniques": [
-        "[-75]% growth [in all cities] <when between [-10] and [-1] Happiness>",
-        "Nullifies Growth [in all cities] <when below [-10] Happiness>",
-        "[-50]% [Production] [in all cities] <when below [-10] Happiness>",
-        "[-33]% Strength <for [All] units> <when below [-10] Happiness>",
-        "Cannot build [Settler] units <when below [-10] Happiness>",
-        "Rebel units may spawn <when below [-10] Happiness>",
+        "[-50]% growth [in all cities] <when between [-15] and [-1] Happiness>",
+        "Nullifies Growth [in all cities] <when below [-15] Happiness>",
+        "[-33]% [Production] [in all cities] <when below [-15] Happiness>",
+        "[-33]% Strength <for [All] units> <when below [-15] Happiness>",
+        "Cannot build [Settler] units <when below [-15] Happiness>",
+        "Rebel units may spawn <when below [-15] Happiness>",
         "[-1] Sight <for [Embarked] units>",
-
-        // Filtering uniques must be listed here to tell RulesetValidator they're OK despite untyped
-        "Aircraft",
-        "specialize",
         
+        
+        //策反叛军
+        "Triggers a [Revolt] event <if [Plot a rebellion in another country] is constructed by anybody> <when below [1] [Planned value]> <when below [1] [Confrontation value]> <with [33]% chance> <upon turn end>",
+        "Instantly consumes [1] [Confrontation value] <when above [0] [Confrontation value]> <upon turn end>",
+        
+        
+        
+        
+        // Filtering uniques must be listed here to tell RulesetValidator they're OK despite untyped
+        //"Aircraft",
+        "specialize",
+        "Trade",
         
         
         
@@ -35,19 +43,34 @@
         
         "Each city founded increases culture cost of policies [100]% less than normal",
         "[-33]% Culture cost of adopting new Policies",
+        "[-33]% Culture cost of natural border growth [in all cities]",
+        
+        
+        
+        //每个时代4个预备役4个正规军，初始再送两个
+        "Provides [10] [Army size] <starting from the [Ancient era]>",
+		"Provides [8] [Army size] <starting from the [Classical era]>",
+		"Provides [8] [Army size] <starting from the [Medieval era]>",
+		/*"Provides [8] [Army size] <starting from the [Renaissance era]>",
+		"Provides [8] [Army size] <starting from the [Industrial era]>",
+		"Provides [8] [Army size] <starting from the [Modern era]>",
+		"Provides [8] [Army size] <starting from the [Atomic era]>",
+		"Provides [8] [Army size] <starting from the [Information era]>",*/
+        
+        
+        //"[+33]% maintenance costs <when below [0] [Army size]>",//废弃
+        "[-1 Gold] <for every [1] [Army size]> <when below [5] [Army size]> <starting from the [Ancient era]>",
+        "[-1 Gold] <for every [1] [Army size]> <when below [9] [Army size]> <starting from the [Classical era]>",
+        "[-1 Gold] <for every [1] [Army size]> <when below [13] [Army size]> <starting from the [Medieval era]>",
+        //"[-1 Gold] <for every [1] [Army size]> <when below [17] [Army size]> <starting from the [Renaissance era]>",
+        //"[-1 Gold] <for every [1] [Army size]> <when below [21] [Army size]> <starting from the [Industrial era]>",
+        //"[-1 Gold] <for every [1] [Army size]> <when below [25] [Army size]> <starting from the [Modern era]>",
+        //"[-1 Gold] <for every [1] [Army size]> <when below [29] [Army size]> <starting from the [Atomic era]>",
+        //"[-1 Gold] <for every [1] [Army size]> <when below [33] [Army size]> <starting from the [Information era]>",
         
         
         
         
-        
-        "Provides [8] [Army size] <starting from the [Ancient era]>",
-		"Provides [6] [Army size] <starting from the [Classical era]>",
-		"Provides [6] [Army size] <starting from the [Medieval era]>",
-		/*"Provides [6] [Army size] <starting from the [Renaissance era]>",
-		"Provides [6] [Army size] <starting from the [Industrial era]>",
-		"Provides [6] [Army size] <starting from the [Modern era]>",
-		"Provides [6] [Army size] <starting from the [Atomic era]>",
-		"Provides [6] [Army size] <starting from the [Information era]>",*/
         
         
         
@@ -63,26 +86,82 @@
 
         
         
+        /*"Consumes [1] [Degree of social development]",
+        "Consumes [1] [Degree of social development] <when above [14] [Degree of social development]>",
+        "Consumes [1] [Degree of social development] <when above [29] [Degree of social development]>",
+        "Consumes [1] [Degree of social development] <when above [44] [Degree of social development]>",*/
+        
+        "Instantly consumes [1] [Degree of social development] <upon turn end>",
+        "Instantly consumes [1] [Degree of social development] <when above [14] [Degree of social development]> <upon turn end>",
+        "Instantly consumes [1] [Degree of social development] <when above [29] [Degree of social development]> <upon turn end>",
+        "Instantly consumes [1] [Degree of social development] <when above [44] [Degree of social development]> <upon turn end>",
+        
+        "[-25]% [Production] [in all cities] <when above [-35] [Degree of social development]> <when below [0] [Degree of social development]>",
+        "[-25]% [Science] [in all cities] <when above [-35] [Degree of social development]> <when below [0] [Degree of social development]>",
+        "[-25]% [Culture] [in all cities]<when above [-35] [Degree of social development]> <when below [0] [Degree of social development]>",
+        "[-25]% [Gold] [in all cities]<when above [-35] [Degree of social development]> <when below [0] [Degree of social development]>",
+        "Provides [4] [Army size]<when above [-35] [Degree of social development]> <when below [0] [Degree of social development]>",
+        
+        
+        "[-10]% [Production] [in all cities]<when above [-1] [Degree of social development]> <when below [15] [Degree of social development]>",
+        "[-10]% [Science] [in all cities]<when above [-1] [Degree of social development]> <when below [15] [Degree of social development]>",
+        
+        
+        "[+10]% [Science] [in all cities]<when above [29] [Degree of social development]> <when below [45] [Degree of social development]>",
+        "[+10]% [Culture] [in all cities]<when above [29] [Degree of social development]> <when below [45] [Degree of social development]>",
+        
+        "[+20]% [Production] [in all cities]<when above [44] [Degree of social development]> <when below [60] [Degree of social development]>",
+        "[+20]% [Science] [in all cities]<when above [44] [Degree of social development]> <when below [60] [Degree of social development]>",
+        "[+20]% [Culture] [in all cities]<when above [44] [Degree of social development]> <when below [60] [Degree of social development]>",
+        "[+20]% [Gold] [in all cities]<when above [44] [Degree of social development]> <when below [60] [Degree of social development]>",
+        "Provides [6] [Army size]<when above [44] [Degree of social development]> <when below [60] [Degree of social development]>",
         
         
         
         
-        "Provides [2] [Imperial jurisdiction] <for [Emprire] Civilizations>",
-        "Provides [1] [Imperial jurisdiction] <starting from the [Ancient era]> <for [Emprire] Civilizations>",
-		"Provides [1] [Imperial jurisdiction] <starting from the [Classical era]> <for [Emprire] Civilizations>",
-		"Provides [1] [Imperial jurisdiction] <starting from the [Medieval era]> <for [Emprire] Civilizations>",
-		/*"Provides [1] [Imperial jurisdiction] <starting from the [Renaissance era]> <for [Emprire] Civilizations>",
-		"Provides [1] [Imperial jurisdiction] <starting from the [Industrial era]> <for [Emprire] Civilizations>",
-		"Provides [1] [Imperial jurisdiction] <starting from the [Modern era]> <for [Emprire] Civilizations>",
-		"Provides [1] [Imperial jurisdiction] <starting from the [Atomic era]> <for [Emprire] Civilizations>",
-		"Provides [1] [Imperial jurisdiction] <starting from the [Information era]> <for [Emprire] Civilizations>",*/
+        
+        
+        
+        
+        "Provides [2] [Imperial jurisdiction] <for [Empire] Civilizations>",
+        "Provides [1] [Imperial jurisdiction] <starting from the [Ancient era]> <for [Empire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Classical era]> <for [Empire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Medieval era]> <for [Empire] Civilizations>",
+		/*"Provides [1] [Imperial jurisdiction] <starting from the [Renaissance era]> <for [Empire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Industrial era]> <for [Empire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Modern era]> <for [Empire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Atomic era]> <for [Empire] Civilizations>",
+		"Provides [1] [Imperial jurisdiction] <starting from the [Information era]> <for [Empire] Civilizations>",*/
         
         
         
         
         
         "Colonize",//殖民国家
-        "Emprire",//帝国
+        "Empire",//帝国
+        
+        
+        
+        
+        
+        
+        "Discover [Classical era] <when above [7] [Tech point]> <starting from the [Ancient era]> <upon turn end>",
+        "Discover [Medieval era] <when above [18] [Tech point]> <starting from the [Classical era]> <upon turn end>",
+        
+        
+        
+        
+        
+        
+        "[+1]% Strength <for every [10] [War support]> <for [All] units>",
+        
+        "Instantly provides [100] [War support] <when below [50] [War support]> <upon declaring war with a major Civilization>",
+        //"Consumes [5] [War support] <when at war> <when above [0] [War support]>",
+        //"Consumes [5] [War support] <for every [50] [War support]> <when above [100] [War support]>",
+        
+        "Instantly consumes [5] [War support] <when at war> <when above [0] [War support]> <upon turn end>",
+        "Instantly consumes [5] [War support] <for every [50] [War support]> <when above [100] [War support]> <upon turn end>",
+        
         
     ]
 }

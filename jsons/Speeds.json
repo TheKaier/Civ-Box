@@ -47,7 +47,7 @@
     },*/
     {
         "name": "Standard",
-        "modifier": 1.0,
+        "modifier": 0.67,
         "productionCostModifier": 1.0,
         "goldCostModifier": 1.0,
         "scienceCostModifier": 1.0,

@@ -1,5 +1,34 @@
 [//"Triggers a [事件名] event"
-    
+    {
+        "name": "Revolt",
+        "text": "How should we respond to other countries that have incited rebellion against our country?",
+        "choices": [
+            {
+                "text": "Put them down!",
+                "uniques": [
+                "[-20]% [Production] [in all cities] <for [5] turns>",
+                "[-33]% [Science] [in all cities] <for [5] turns>",
+                "[-33]% [Gold] [in all cities] <for [5] turns>",
+                "[+25]% Unhappiness from [Population] [in all cities] <for [5] turns>",
+                "Instantly provides [7] [Confrontation value] <hidden from users>",
+                "Rebel units may spawn <for [7] turns>",
+                ],
+            },
+            {
+                "text": "There is no such thing.",
+                "uniques": [
+                "[-25]% [Production] [in all cities] <for [5] turns>",
+                "[-15]% [Science] [in all cities] <for [5] turns>",
+                "[-25]% [Gold] [in all cities] <for [5] turns>",
+                "Cannot build [Settler] units <for [7] turns>",
+                "Nullifies Growth [in all cities] <for [7] turns>",
+                "[-15]% Strength <for [7] turns>",
+                "Instantly provides [7] [Confrontation value] <hidden from users>",
+                "Rebel units may spawn <for [7] turns>",
+                ],
+            },
+        ]
+    }
 
 
 ]

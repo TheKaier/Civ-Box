@@ -13,7 +13,7 @@
         },
 
         "uniques": [
-"Only available <before adopting [Liberty Policy]>",
+"Only available <before adopting [Liberty Policy]> <for [Empire] Civilizations>",
 "Free Social Policy",
         //"Unavailable",
 	
@@ -24,12 +24,9 @@
 	   {
                 "name": "Tradition",
                 "uniques": [
-                "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
-                "[+2 Culture, +2 Gold, +1 Production] [in capital] <for [Emprire] Civilizations>",
+                "Provides [1] [Imperial jurisdiction]",
+                "[+2 Culture, +2 Gold, +1 Production] [in capital]",
                 
-		"Provides [1] [Focal point] <for [Colonize] Civilizations>",
-		"[+2 Culture] [in capital] <for [Colonize] Civilizations>",
-		
                 ],
                 "row": 1,
                 "column": 5
@@ -40,11 +37,8 @@
     "Only available <after adopting [Tradition]>",
     "Only available <before adopting [Elder Rule]>",
     
-    "[+1 Faith, +2 Gold, +1 Culture] <for [Emprire] Civilizations>",
-    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
-    
-    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
-    "[+1 Culture] [in all cities] <for [Colonize] Civilizations>",
+    "[+1 Faith, +2 Gold, +1 Culture]",
+    "Provides [1] [Imperial jurisdiction]",
     ],
     "row": 2,
     "column": 2
@@ -55,10 +49,8 @@
     "Only available <after adopting [The Divine Right of Kings]>",
     "Only available <before adopting [Oligarchy]>",
     
-    "[+2 Food, +1 Faith] [in capital] <for [Emprire] Civilizations>",
-    
-    "[+1 Faith, +1 Culture] <for [Colonize] Civilizations>",
-    
+    "[+1 Happiness, +1 Gold] per [2] population [in capital]",
+    "[+1 Production] from every [Shrine]",
     
     ],
     "row": 3,
@@ -69,11 +61,9 @@
     "uniques": [
     "Only available <after adopting [The Supremacy of Royal Power]>",
     
-    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
-    "[+1 Faith, +1 Production] from every [Shrine] <for [Emprire] Civilizations>",
-    
-    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
-    "[+1 Faith, +1 Gold] from every [Shrine] <for [Colonize] Civilizations>",
+    "Provides [1] [Imperial jurisdiction]",
+    "[+1 Faith] from every [Shrine]",
+    "[+1 Faith, +1 Gold] per [4] population [in all cities]",
     ],
     "row": 4,
     "column": 1
@@ -83,10 +73,11 @@
     "uniques": [
     "Only available <after adopting [The Divine Right of Kings]>",
     "Only available <before adopting [The Supremacy of Royal Power]>",
-    "Units in cities cost no Maintenance <for [Emprire] Civilizations>",
-    "[+25]% Strength for cities <with a garrison> <when attacking> <for [Emprire] Civilizations>",
+    "Units in cities cost no Maintenance",
+    "[+33]% Strength for cities <with a garrison>",
     
-    "[+1 Food] per [3] population [in all cities] <for [Colonize] Civilizations>",
+    
+    "[+1 Food] per [3] population [in all cities]",
     ],
     "row": 3,
     "column": 3
@@ -96,12 +87,10 @@
     "uniques": [
     "Only available <after adopting [Oligarchy]>",
     
-    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
-    "[+15]% growth [in capital]",
-    "[+2 Food, +2 Culture] [in capital]",
+    "Provides [1] [Imperial jurisdiction]",
+    "[+25]% growth [in capital]",
+    "[+2 Food, +2 Happiness] [in capital]",
     
-    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
-    "[+1 Science, +1 Culture] per [3] population [in capital] <for [Colonize] Civilizations>",
     ],
     "row": 4,
     "column": 3
@@ -142,11 +131,9 @@
     "Only available <after adopting [Tradition]>",
     "Only available <before adopting [The Divine Right of Kings]>",
     
-    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
-    "[-25]% construction time for [All] improvements <for [Emprire] Civilizations>",
+    "Provides [1] [Imperial jurisdiction]",
+    "[-25]% construction time for [All] improvements",
     
-    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
-    "[+5]% Production when constructing [All] buildings [in all cities] <for [Colonize] Civilizations>",
     "[+2 Production] [in capital]",
     ],
     "row": 2,
@@ -158,10 +145,8 @@
     "Only available <after adopting [Elder Rule]>",
     "Only available <before adopting [Scholar-Official Politics]>",
     
-    "[+15]% growth [in capital] <for [Emprire] Civilizations>",
-    "[+15]% growth [in all cities] <for [Emprire] Civilizations>",
-    
-    "[+2 Culture, +2 Science] [in capital] <for [Colonize] Civilizations>",
+    "[+25]% growth [in capital]",
+    "[+1 Culture] [in all cities]",
     ],
     "row": 3,
     "column": 7
@@ -171,11 +156,9 @@
     "uniques": [
     "Only available <after adopting [Gentry Class]>",
     
-    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
-    "Provides a [Aqueduct] in your first [4] cities for free <for [Emprire] Civilizations>",
-    
-    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
-    "[+1 Happiness, +1 Gold] per [3] population [in capital] <for [Colonize] Civilizations>",
+    "Provides [1] [Imperial jurisdiction]",
+    "Provides a [Aqueduct] in your first [4] cities for free",
+    "[+1 Culture, +1 Gold] per [3] population [in capital]",
     ],
     "row": 4,
     "column": 7
@@ -186,9 +169,8 @@
     "Only available <after adopting [Elder Rule]>",
     "Only available <before adopting [Gentry Class]>",
     
-    "[+1 Culture] [in all cities] <for [Emprire] Civilizations>",
+    "[+1 Culture, +1 Science] [in all cities]",
     
-    "[+1 Science] [in all cities] <for [Colonize] Civilizations>",
     ],
     "row": 3,
     "column": 9
@@ -198,10 +180,9 @@
     "uniques": [
     "Only available <after adopting [Scholar-Official Politics]>",
     
-    "Provides [1] [Imperial jurisdiction] <for [Emprire] Civilizations>",
-    "Provides the cheapest [Gold] building in your first [4] cities for free <for [Emprire] Civilizations>",
-    "Provides [1] [Focal point] <for [Colonize] Civilizations>",
-    "Provides the cheapest [Science] building in your first [4] cities for free <for [Colonize] Civilizations>",
+    "Provides [1] [Imperial jurisdiction]",
+    "Provides the cheapest [Science] building in your first [4] cities for free",
+    "[+1 Science, +1 Gold] per [3] population [in capital]",
     ],
     "row": 4,
     "column": 9
@@ -249,7 +230,7 @@
         },
 
         "uniques": [
-"Only available <before adopting [Tradition Policy]>",
+"Only available <before adopting [Tradition Policy]> <for [Colonize] Civilizations>",
         //"Unavailable",
 	"Free Social Policy",
 ],
@@ -259,9 +240,9 @@
 	   {
                 "name": "Liberty",
                 "uniques": [
+		"[+1 Culture] [in all cities]",
 		
-		
-		
+		"Provides [1] [Focal point]",
                 ],
                 "row": 1,
                 "column": 5
@@ -271,7 +252,9 @@
     "uniques": [
     "Only available <after adopting [Liberty]>",
     "Only available <before adopting [Democratic Politics]>",
-    
+    "Provides [1] [Focal point]",
+    "[+1 Production] [in all cities]",
+    "[+5]% Production when constructing [All] buildings [in all cities]",
     ],
     "row": 2,
     "column": 2
@@ -281,7 +264,8 @@
     "uniques": [
     "Only available <after adopting [Citizens'Rights]>"
     "Only available <before adopting [Citizens'Assembly]>",
-    
+    "[-15]% Unhappiness from [Population] [in capital]",
+    "[+2 Culture] [in capital]",
     ],
     "row": 3,
     "column": 1
@@ -290,6 +274,9 @@
     "name": "Republican System",
     "uniques": [
     "Only available <after adopting [Elite Politics]>",
+    "Provides [1] [Focal point]",
+    "[-10]% Unhappiness from [Population] [in all non-occupied cities]",
+    "Free [Settler] appears",
     ],
     "row": 4,
     "column": 1
@@ -299,7 +286,8 @@
     "uniques": [
     "Only available <after adopting [Citizens'Rights]>",
     "Only available <before adopting [Elite Politics]>",
-    
+    "Free [Worker] appears",
+    "[+5]% Production when constructing [All] buildings [in all cities]",
     ],
     "row": 3,
     "column": 3
@@ -308,6 +296,9 @@
     "name": "Factional Disputes",
     "uniques": [
     "Only available <after adopting [Citizens'Assembly]>",
+    "Provides [1] [Focal point]",
+    "Free [Settler] appears",
+    "[+1 Culture] [in all cities]",
     ],
     "row": 4,
     "column": 3
@@ -316,6 +307,8 @@
     "name": "Small States with Few People",
     "uniques": [
     "Only available <after adopting [Liberty]>",
+    "Provides [1] [Focal point]",
+    "[+1 Culture] [in all cities]",
     ],
     "row": 2,
     "column": 5
@@ -324,6 +317,8 @@
     "name": "Citizenship Scope",
     "uniques": [
     "Only available <after adopting [Small States with Few People]>",
+    "[+33]% Production when constructing [Worker] units [in capital]",
+    "[+1 Production] [in all cities]",
     ],
     "row": 3,
     "column": 5
@@ -332,6 +327,9 @@
     "name": "Union of City-States",
     "uniques": [
     "Only available <after adopting [Citizenship Scope]>",
+    "Provides [1] [Focal point]",
+    "Empire enters golden age",
+    "Free [Settler] appears",
     ],
     "row": 4,
     "column": 5
@@ -341,6 +339,8 @@
     "uniques": [
     "Only available <after adopting [Liberty]>",
     "Only available <before adopting [Citizens'Rights]>",
+    "Provides [1] [Focal point]",
+    "[-10]% Unhappiness from [Population] [in all non-occupied cities]",
     
     ],
     "row": 2,
@@ -351,7 +351,7 @@
     "uniques": [
     "Only available <after adopting [Collective Deliberation]>",
     "Only available <before adopting [Independent Public Opinion]>",
-    
+    "[+1 Culture, +1 Happiness] per [5] population [in all cities]",
     ],
     "row": 3,
     "column": 7
@@ -360,6 +360,10 @@
     "name": "Unanimity",
     "uniques": [
     "Only available <after adopting [Democratic Politics]>",
+    "Provides [1] [Focal point]",
+    "[+15]% Production when constructing [All] wonders [in all cities]",
+    "[+5]% Production when constructing [All] buildings [in all cities]",
+    "[50]% of excess happiness converted to [Culture]",
     ],
     "row": 4,
     "column": 7
@@ -369,7 +373,7 @@
     "uniques": [
     "Only available <after adopting [Collective Deliberation]>",
     "Only available <before adopting [Democratic Politics]>",
-    
+    "[+1 Gold, +1 Science] per [3] population [in capital]",
     ],
     "row": 3,
     "column": 9
@@ -378,6 +382,9 @@
     "name": "Majority Opinion",
     "uniques": [
     "Only available <after adopting [Independent Public Opinion]>",
+    "Provides [1] [Focal point]",
+    "[50]% of excess happiness converted to [Science]",
+    "Provides the cheapest [Science] building in your first [4] cities for free",
     ],
     "row": 4,
     "column": 9
@@ -764,7 +771,7 @@
         },
 
         "uniques": [
-
+"Free Social Policy",
         //"Unavailable",
 	
 ],
@@ -774,8 +781,9 @@
 	   {
                 "name": "Military",
                 "uniques": [
-		
-		
+		"Provides [4] [Army size]",
+		"[+33]% Strength <vs [Barbarian] units>",
+		"Notified of new Barbarian encampments",
 		
                 ],
                 "row": 1,
@@ -785,6 +793,9 @@
     "name": "Drill",
     "uniques": [
     "Only available <after adopting [Military]>",
+    "[+33]% XP gained from combat <for [Military] units>",
+    "[+10]% Production when constructing [Military] units [in all cities]",
+    "Provides [2] [Army size]",
     ],
     "row": 2,
     "column": 1
@@ -793,6 +804,9 @@
     "name": "Military Merit System",
     "uniques": [
     "Only available <after adopting [Drill]>",
+    "[-50]% Gold cost of upgrading <for [Military] units>",
+    "[4] units cost no maintenance",
+    "Provides [2] [Army size]",
     ],
     "row": 3,
     "column": 1
@@ -801,6 +815,8 @@
     "name": "Discipline",
     "uniques": [
     "Only available <after adopting [Military]>",
+    "[+10]% Strength <for [Melee] units> <when adjacent to a [Melee] unit>",
+    "Provides [2] [Army size]",
     ],
     "row": 2,
     "column": 5
@@ -809,6 +825,9 @@
     "name": "Combat Spirit",
     "uniques": [
     "Only available <after adopting [Discipline]>",
+    "[4] units cost no maintenance",
+    "[+10]% Production when constructing [Military] units [in all cities]",
+    "Provides [2] [Army size]",
     ],
     "row": 3,
     "column": 5
@@ -852,7 +871,7 @@
         },
 
         "uniques": [
-
+"Free Social Policy",
         //"Unavailable",
 	
 ],
@@ -862,8 +881,8 @@
 	   {
                 "name": "Business",
                 "uniques": [
-		
-		
+		"[+1 Gold] from every [Trading post]",
+		"[+33]% [Gold] [in capital]",
 		
                 ],
                 "row": 1,
@@ -873,6 +892,9 @@
     "name": "Coastal Trade",
     "uniques": [
     "Only available <after adopting [Business]>",
+    "[+2 Production, +2 Gold] [in all coastal cities]",
+    "[-10]% maintenance on road & railroads",
+    
     ],
     "row": 2,
     "column": 1
@@ -881,6 +903,9 @@
     "name": "Oceanic Exploration",
     "uniques": [
     "Only available <after adopting [Coastal Trade]>",
+    "[+1] Happiness from each type of luxury resource",
+    "[+1 Gold] from every [Harbor]",
+    "[+2 Gold] from every [Seaport]",
     ],
     "row": 3,
     "column": 1
@@ -889,6 +914,8 @@
     "name": "Continental Trade",
     "uniques": [
     "Only available <after adopting [Business]>",
+    "[-15]% maintenance on road & railroads",
+    "[Gold] cost of purchasing items in cities [-33]%",
     ],
     "row": 2,
     "column": 5
@@ -897,6 +924,8 @@
     "name": "Penetration into the Interior",
     "uniques": [
     "Only available <after adopting [Continental Trade]>",
+    "[+1] Happiness from each type of luxury resource",
+    
     ],
     "row": 3,
     "column": 5

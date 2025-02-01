@@ -13,6 +13,10 @@
 		"uniques": ["Can build [Land] improvements on tiles",
 		"Can build [Fishing Boats] improvements on tiles",
 		  "Automation is a primary action",
+		  "Can upgrade to [Swordsman] <after discovering [Ironware]> <if [Terracotta Army] is constructed>",
+		  "Can upgrade to [Composite Bowmen] <after discovering [Architectural construction]> <if [Terracotta Army] is constructed>",
+		  
+		  
 		],
 		"cost": 45
 	},
@@ -21,7 +25,8 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 70,
-		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+		"uniques": ["Founds a new city <by consuming this unit>",
+		"Excess Food converted to Production when under construction",
 			"Requires at least [2] population",
 			
 			],
@@ -456,4 +461,90 @@
     }
 
 //"Can upgrade to [Missile Crusier] <after discovering [Rocketry]>",
+{
+		"name": "Missionary",
+		"unitType": "Civilian",
+		"uniques": ["Can Spread Religion <for [3] movement> <[2] times> <after which this unit is consumed>",
+            "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>",],
+		"movement": 3,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Inquisitor",
+		"unitType": "Civilian",
+		"uniques": ["Prevents spreading of religion to the city it is next to",
+			"Can remove other religions from cities <in [Friendly] tiles> <once> <after which this unit is consumed>",
+            "Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[+1] Sight", "Only available <when religion is enabled>", "Unbuildable", "Religious Unit"
+		],
+		"movement": 2
+	},
+{
+		"name": "Great Artist",//大艺术家
+		"unitType": "Civilian",
+		"uniques": [
+            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            "Can instantly construct a [Landmark] improvement <by consuming this unit>",
+            "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Scientist",//大科学家
+		"unitType": "Civilian",
+		"uniques": [
+            "Can hurry technology research",
+            "Can instantly construct a [Academy] improvement <by consuming this unit>",
+            "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",//大商人
+		"unitType": "Civilian",
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [50] Influence",
+            "Can instantly construct a [Customs house] improvement <by consuming this unit>",
+			"Great Person - [Gold]", "Unbuildable", "Uncapturable",
+			],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",//大工程师
+		"unitType": "Civilian",
+		"uniques": ["Can speed up construction of a building",
+            "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+            "Great Person - [Production]", "Unbuildable", "Uncapturable",
+            ],
+		"movement": 2
+	},
+	{
+		"name": "Great Prophet",//大预言家
+		"unitType": "Civilian",
+		"uniques": [
+            "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+            "Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+			"Removes other religions when spreading religion",
+            "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+			"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
+			"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
+			"Takes your religion over the one in their birth city"
+		],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Great General",//大军事家
+		"unitType": "Civilian",
+		"uniques": [
+            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            "[+15]% Strength bonus for [Military] units within [2] tiles",
+            
+            
+            
+            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Great Person - [War]", "Unbuildable", "Uncapturable",
+			],
+		"movement": 2
+	},
 ]

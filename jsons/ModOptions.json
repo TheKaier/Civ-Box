@@ -1,11 +1,21 @@
 {
+"isBaseRuleset": true,
 "constants": {
-        "maxXPfromBarbarians": 10086,
-    "pantheonBase": 100000,
+        "maxXPfromBarbarians": 100000,
+    "pantheonBase": 10,
     "pantheonGrowth": 0,
-    "cityStrengthFromTechsFullMultiplier": 0.2,
-    //"Can trade civilization introductions for [0] Gold"
+    "cityStrengthFromTechsFullMultiplier": 0.1,
+    "minimalCityDistance":2,
+    "cityWorkRange":2,
+    "baseCityBombardRange":1,
+    "cityExpandRange":3,
+    "riverCountMultiplier": 0.04,
     },
-    "isBaseRuleset": true,
+    "uniques":["Can trade civilization introductions for [10] Gold",
+    "Cannot be used as permanent audiovisual mod",
     
-}
+    
+    
+    
+    
+    ]}
