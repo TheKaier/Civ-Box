@@ -1,3 +1,855 @@
 [
+//剑兵
+{
+    "name": "Basic Training", // 基础训练
+    "uniques": [
+    "[+10]% Strength",
+    
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 0,
+    "row": 0
+},
+{
+    "name": "Trench Tactics", // 堑壕战术
+    "prerequisites": ["Basic Training"],
+    "uniques": [
+    "[+30]% Strength <in [Friendly Land] tiles> <when defending>",
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 0,
+    "row": 1
+},
+{
+    "name": "Assault Tactics", // 突击战术
+    "prerequisites": ["Basic Training"],
+    "uniques": [
+    "[+15]% Strength <when attacking>",
+    
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 1,
+    "row": 1
+},
+{
+    "name": "Composite Armor", // 复合装甲
+    "prerequisites": ["Trench Tactics"],
+    "uniques": [
+    "[+33]% Strength <vs [Archers] units> <when defending>",
+    
+    
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 0,
+    "row": 2
+},
+{
+    "name": "Infiltration Tactics", // 渗透作战
+    "prerequisites": ["Assault Tactics"],
+    "uniques": [
+    
+    "Ignores Zone of Control",
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 1,
+    "row": 2
+},
+{
+    "name": "Battlefield First Aid", // 战场急救
+    "prerequisites": ["Basic Training"],
+    "uniques": [
+    "[+10] HP when healing",
+    
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 2,
+    "row": 1
+},
+{
+    "name": "Iron Tide", // 钢铁洪流
+    "prerequisites": ["Composite Armor"],
+    "uniques": [
+    "[+15]% Strength <for [Melee] units> <when adjacent to a [Melee] unit> <when defending>",
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 0,
+    "row": 3
+},
+{
+    "name": "Fearless Charge", // 无畏冲锋
+    "prerequisites": ["Infiltration Tactics"],
+    "uniques": [
+    "Can move after attacking",
+    "[+15]% Strength <when attacking>",
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 1,
+    "row": 3
+},
+{
+    "name": "Undying Veteran", // 不死老兵
+    "prerequisites": ["Battlefield First Aid"],
+    "uniques": [
+    "[+50]% Strength <when below [30] HP>",
+    
+    ],
+    "unitTypes": ["Swordsmen","Gunpowder"],
+    "column": 2,
+    "row": 2
+},
+
+
+
+
+//弓兵
+{
+    "name": "Basic Shooting", // 基础射击
+    "uniques": [
+    "[+10]% Strength <when attacking>",
+    
+    ],
+    "unitTypes": ["Archers"],
+    "column": 3,
+    "row": 0
+},
+{
+    "name": "Suppression Fire", // 压制射击
+    "prerequisites": ["Basic Shooting"],
+    "uniques": [
+    "[Target Unit] gains the [Suppression] status for [2] turn(s) <upon damaging a [{non-[Long-Range Naval]} {non-[Short-Range Naval]} {non-[Drones]}] unit>",
+    ],
+    "unitTypes": ["Archers"],
+    "column": 3,
+    "row": 1
+},
+{
+    "name": "Sniper Training", // 狙击训练
+    "prerequisites": ["Basic Shooting"],
+    "uniques": [
+    "[+15]% Strength <when attacking>",
+    ],
+    "unitTypes": ["Archers"],
+    "column": 4,
+    "row": 1
+},
+{
+    "name": "Flaming Arrows", // 燃烧箭矢
+    "prerequisites": ["Suppression Fire"],
+    "uniques": [
+    "[+15]% Strength <when attacking>",
+    
+    ],
+    "unitTypes": ["Archers"],
+    "column": 3,
+    "row": 2
+},
+{
+    "name": "Weak Point Strike", // 弱点打击
+    "prerequisites": ["Sniper Training"],
+    "uniques": [
+    "[+25]% Strength <vs [Wounded] units> <when attacking>",
+    ],
+    "unitTypes": ["Archers"],
+    "column": 4,
+    "row": 2
+},
+{
+    "name": "Ranger Formation", // 游骑阵型
+    "prerequisites": ["Basic Shooting"],
+    "uniques": [
+    "Can move after attacking",
+    
+    ],
+    "unitTypes": ["Archers"],
+    "column": 5,
+    "row": 1
+},
+{
+    "name": "Arrow Storm", // 箭雨风暴
+    "prerequisites": ["Flaming Arrows"],
+    "uniques": [
+    "[1] additional attacks per turn",
+    ],
+    "unitTypes": ["Archers"],
+    "column": 3,
+    "row": 3
+},
+{
+    "name": "Piercing Shot", // 穿云一击
+    "prerequisites": ["Weak Point Strike"],
+    "uniques": [
+    "Ranged attacks may be performed over obstacles",
+    
+    ],
+    "unitTypes": ["Archers"],
+    "column": 4,
+    "row": 3
+},
+{
+    "name": "Windrunner", // 风行者
+    "prerequisites": ["Ranger Formation"],
+    "uniques": [
+    "[+1] Movement",
+    
+    ],
+    "unitTypes": ["Archers"],
+    "column": 5,
+    "row": 2
+},
+
+
+
+//攻城器
+{
+    "name": "Basic Assembly", // 基础组装
+    "uniques": [
+    "[+20]% Strength <vs cities> <when defending>",
+    
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 6,
+    "row": 0
+},
+{
+    "name": "Heavy Ram", // 重型冲锤
+    "prerequisites": ["Basic Assembly"],
+    "uniques": [
+    "[+50]% Strength <vs cities> <when attacking>",
+    
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 6,
+    "row": 1
+},
+{
+    "name": "Armor Upgrade", // 装甲改造
+    "prerequisites": ["Basic Assembly"],
+    "uniques": [
+    
+    "[+20]% Strength <when defending>",
+    
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 7,
+    "row": 1
+},
+{
+    "name": "Seismic Strike", // 震地攻击
+    "prerequisites": ["Heavy Ram"],
+    "uniques": [
+    "[Target Unit] gains the [Suppression] status for [2] turn(s) <upon damaging a [{non-[Long-Range Naval]} {non-[Short-Range Naval]} {non-[Drones]}] unit>",
+    
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 6,
+    "row": 2
+},
+{
+    "name": "Self-Repair Structure", // 自愈结构
+    "prerequisites": ["Armor Upgrade"],
+    "uniques": [
+    "[+15] HP when healing",
+    
+    
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 7,
+    "row": 2
+},
+{
+    "name": "Smoke Cover", // 烟雾掩护
+    "prerequisites": ["Basic Assembly"],
+    "uniques": [
+    "Invisible to non-adjacent units",
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 8,
+    "row": 1
+},
+{
+    "name": "Apocalypse Barrage", // 末日轰击
+    "prerequisites": ["Seismic Strike"],
+    "uniques": [
+    "[+100]% Strength <vs cities> <when attacking>",
+    
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 6,
+    "row": 3
+},
+{
+    "name": "Immortal Fortress", // 不朽要塞
+    "prerequisites": ["Self-Repair Structure"],
+    "uniques": [
+    "[+25]% Strength <when defending>",
+    
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 7,
+    "row": 3
+},
+{
+    "name": "War Engineering", // 战争工程
+    "prerequisites": ["Smoke Cover"],
+    "uniques": [
+    "[+20]% Strength <when defending>",
+    "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+    
+    ],
+    "unitTypes": ["Siege Engines"],
+    "column": 8,
+    "row": 2
+},
+
+
+
+
+//骑兵
+{
+    "name": "Horsemanship", // 马术精要
+    "uniques": [
+    "[+1] Movement",
+    
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 9,
+    "row": 0
+},
+{
+    "name": "Trample Charge", // 践踏冲锋
+    "prerequisites": ["Horsemanship"],
+    "uniques": [
+    "[+50]% to Flank Attack bonuses",
+    
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 9,
+    "row": 1
+},
+{
+    "name": "Nomadic Endurance", // 游牧耐力
+    "prerequisites": ["Horsemanship"],
+    "uniques": [
+    "[+10] HP when healing",
+    
+    
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 10,
+    "row": 1
+},
+{
+    "name": "Breaker Cavalry", // 破阵铁骑
+    "prerequisites": ["Trample Charge"],
+    "uniques": [
+    "[+15]% Strength <when above [99] HP>",
+    
+    
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 9,
+    "row": 2
+},
+{
+    "name": "Self-Healing Armor", // 自愈马铠
+    "prerequisites": ["Nomadic Endurance"],
+    "uniques": [
+    "Unit will heal every turn, even if it performs an action",
+    
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 10,
+    "row": 2
+},
+{
+    "name": "Desert Conquest", // 荒漠征服
+    "prerequisites": ["Horsemanship"],
+    "uniques": [
+    "[+1] Movement",
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 11,
+    "row": 1
+},
+{
+    "name": "Iron Tide Cavalry", // 钢铁洪流
+    "prerequisites": ["Breaker Cavalry"],
+    "uniques": [
+    "[1] additional attacks per turn",
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 9,
+    "row": 3
+},
+{
+    "name": "Undying Legion", // 不死军团
+    "prerequisites": ["Self-Healing Armor"],
+    "uniques": [
+    "Heals [25] damage if it kills a unit",
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 10,
+    "row": 3
+},
+{
+    "name": "All-Terrain Mastery", // 万用地形
+    "prerequisites": ["Desert Conquest"],
+    "uniques": [
+    "Ignores Zone of Control",
+    "Ignores terrain cost",
+    ],
+    "unitTypes": ["Light Cavalry","Heavy Cavalry"],
+    "column": 11,
+    "row": 2
+},
+
+
+
+
+//海军
+{
+    "name": "Hull Reinforcement", // 船体加固
+    "uniques": [
+    "[+20]% Strength <when defending>",
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 12,
+    "row": 0
+},
+{
+    "name": "Ram Upgrade", // 冲角改造
+    "prerequisites": ["Hull Reinforcement"],
+    "uniques": [
+    "[+25]% Strength",
+    
+    
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 12,
+    "row": 1
+},
+{
+    "name": "Volley Array", // 齐射阵列
+    "prerequisites": ["Hull Reinforcement"],
+    "uniques": [
+    "[1] additional attacks per turn",
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 13,
+    "row": 1
+},
+{
+    "name": "Deep Sea Phantom", // 深海幽灵
+    "prerequisites": ["Ram Upgrade"],
+    "uniques": [
+    "Invisible to non-adjacent units",
+    
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 12,
+    "row": 2
+},
+{
+    "name": "Incendiary Barrage", // 燃烧弹幕
+    "prerequisites": ["Volley Array"],
+    "uniques": [
+    "[Target Unit] gains the [Flaming] status for [2] turn(s) <upon damaging a [Short-Range Naval] unit>",
+    "[Target Unit] gains the [Flaming] status for [2] turn(s) <upon damaging a [Long-Range Naval] unit>",
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 13,
+    "row": 2
+},
+{
+    "name": "Rescue Platform", // 救援平台
+    "prerequisites": ["Hull Reinforcement"],
+    "uniques": [
+    "All adjacent units heal [+10] HP when healing",
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 14,
+    "row": 1
+},
+{
+    "name": "Kraken Strike", // 海怪撞击
+    "prerequisites": ["Deep Sea Phantom"],
+    "uniques": [
+    "[Target Unit] gains the [Suppression] status for [2] turn(s) <upon damaging a [Short-Range Naval] unit>",
+    "[Target Unit] gains the [Suppression] status for [2] turn(s) <upon damaging a [Long-Range Naval] unit>",
+    
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 12,
+    "row": 3
+},
+{
+    "name": "Doomsday Volley", // 末日齐射
+    "prerequisites": ["Incendiary Barrage"],
+    "uniques": [
+    "[1] additional attacks per turn",
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 13,
+    "row": 3
+},
+{
+    "name": "Mobile Dockyard", // 移动船坞
+    "prerequisites": ["Rescue Platform"],
+    "uniques": [
+    "[This Unit] heals [20] HP <for [1] movement> <[15] times>",
+    
+    
+    ],
+    "unitTypes": ["Short-Range Naval","Long-Range Naval"],
+    "column": 14,
+    "row": 2
+},
+
+
+//空军
+/*{
+    "name": "Basic Maneuvering", // 基础机动
+    "uniques": ["被防空攻击命中率-15%"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 15,
+    "row": 0
+},
+{
+    "name": "Dogfight Training", // 狗斗训练
+    "prerequisites": ["Basic Maneuvering"],
+    "uniques": ["对空中单位伤害+30%"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 15,
+    "row": 1
+},
+{
+    "name": "Armor-Piercing Warhead", // 穿甲弹头
+    "prerequisites": ["Basic Maneuvering"],
+    "uniques": ["对装甲单位伤害+45%"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 16,
+    "row": 1
+},
+{
+    "name": "Electronic Jamming", // 电子干扰
+    "prerequisites": ["Dogfight Training"],
+    "uniques": ["使被攻击敌机下回合无法行动"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 15,
+    "row": 2
+},
+{
+    "name": "Cluster Bombs", // 集束炸弹
+    "prerequisites": ["Armor-Piercing Warhead"],
+    "uniques": ["攻击时对目标周围1格单位造成20%溅射伤害"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 16,
+    "row": 2
+},
+{
+    "name": "Recon Relay", // 侦查中继
+    "prerequisites": ["Basic Maneuvering"],
+    "uniques": ["攻击后为友军提供目标视野持续3回合"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 17,
+    "row": 1
+},
+{
+    "name": "Sky Dominator", // 天空霸主
+    "prerequisites": ["Electronic Jamming"],
+    "uniques": ["击落敌机后立即获得额外行动回合"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 15,
+    "row": 3
+},
+{
+    "name": "Meteor Strike", // 陨星轰击
+    "prerequisites": ["Cluster Bombs"],
+    "uniques": ["攻击城市时50%概率直接摧毁1级城墙"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 16,
+    "row": 3
+},
+{
+    "name": "Stealth Phantom", // 隐形幽灵
+    "prerequisites": ["Recon Relay"],
+    "uniques": ["永久隐形（主动攻击后显形1回合）"],
+    "unitTypes": ["Fighter Aircraft","Bomber Aircraft"],
+    "column": 17,
+    "row": 2
+},
+
+
+//无人机
+{
+    "name": "Basic Protocol", // 基础协议
+    "uniques": ["+1移动力，+1视野范围"],
+    "unitTypes": ["Drones"],
+    "column": 18,
+    "row": 0
+},
+{
+    "name": "Wide Area Scan", // 广域扫描
+    "prerequisites": ["Basic Protocol"],
+    "uniques": ["揭示隐形单位（半径2格）"],
+    "unitTypes": ["Drones"],
+    "column": 18,
+    "row": 1
+},
+{
+    "name": "Micro Missiles", // 微型飞弹
+    "prerequisites": ["Basic Protocol"],
+    "uniques": ["可对空/地单位造成10点固定伤害"],
+    "unitTypes": ["Drones"],
+    "column": 19,
+    "row": 1
+},
+{
+    "name": "Silent Coating", // 静默涂层
+    "prerequisites": ["Basic Protocol"],
+    "uniques": ["被侦查发现概率-30%"],
+    "unitTypes": ["Drones"],
+    "column": 20,
+    "row": 1
+},
+{
+    "name": "Optical Camouflage", // 光学迷彩
+    "prerequisites": ["Wide Area Scan"],
+    "uniques": ["非攻击状态下隐形"],
+    "unitTypes": ["Drones"],
+    "column": 18,
+    "row": 2
+},
+{
+    "name": "Focused Warhead", // 聚能弹头
+    "prerequisites": ["Micro Missiles"],
+    "uniques": ["对机械单位伤害+50%"],
+    "unitTypes": ["Drones"],
+    "column": 19,
+    "row": 2
+},
+{
+    "name": "Self-Destruct Protocol", // 殉爆协议
+    "prerequisites": ["Silent Coating"],
+    "uniques": ["被摧毁时对周围1格造成50点AOE伤害"],
+    "unitTypes": ["Drones"],
+    "column": 20,
+    "row": 2
+},
+{
+    "name": "Node Relay", // 节点中继
+    "prerequisites": ["Basic Protocol"],
+    "uniques": ["3格内每存在1架友方无人机+5%战斗力"],
+    "unitTypes": ["Drones"],
+    "column": 21,
+    "row": 1
+},
+{
+    "name": "Sky Net", // 天网覆盖
+    "prerequisites": ["Optical Camouflage"],
+    "uniques": ["永久共享全地图友军视野"],
+    "unitTypes": ["Drones"],
+    "column": 18,
+    "row": 3
+},
+{
+    "name": "Decapitation Order", // 斩首指令
+    "prerequisites": ["Focused Warhead"],
+    "uniques": ["可直接攻击指挥官类单位（无视护卫）"],
+    "unitTypes": ["Drones"],
+    "column": 19,
+    "row": 3
+},
+{
+    "name": "Chaos Annihilation", // 混沌湮灭
+    "prerequisites": ["Self-Destruct Protocol"],
+    "uniques": ["自爆后产生EMP区域（禁用机械单位3回合）"],
+    "unitTypes": ["Drones"],
+    "column": 20,
+    "row": 3
+},
+{
+    "name": "Hive Mind", // 蜂巢思维
+    "prerequisites": ["Node Relay"],
+    "uniques": ["每损失1架无人机，其他蜂群成员+20%攻击（可叠加）"],
+    "unitTypes": ["Drones"],
+    "column": 21,
+    "row": 2
+},
+*/
+
+
+
+//枪兵
+{
+    "name": "Basic Spear Training", // 基础枪术
+    "uniques": [
+    "[+17]% Strength <vs [Light Cavalry] units>",
+    "[+17]% Strength <vs [Heavy Cavalry] units>",
+    
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 22,
+    "row": 0
+},
+{
+    "name": "Pike Formation", // 长枪阵型
+    "prerequisites": ["Basic Spear Training"],
+    "uniques": [
+    "[+15]% Strength <when attacking>",
+    
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 22,
+    "row": 1
+},
+{
+    "name": "Shield Wall", // 盾墙防御
+    "prerequisites": ["Basic Spear Training"],
+    "uniques": [
+    "[+20]% Strength <when defending>",
+    
+    
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 23,
+    "row": 1
+},
+{
+    "name": "Armor-Piercing Spear", // 破甲枪头
+    "prerequisites": ["Pike Formation"],
+    "uniques": [
+    "[+20]% Strength <vs [Light Cavalry] units>",
+    "[+20]% Strength <vs [Heavy Cavalry] units>",
+    
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 22,
+    "row": 2
+},
+{
+    "name": "Iron Wall Formation", // 铁壁阵型
+    "prerequisites": ["Shield Wall"],
+    "uniques": [
+    "[+33]% Strength <vs [Archers] units> <when defending>",
+    
+    
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 23,
+    "row": 2
+},
+{
+    "name": "Forced March", // 急行军
+    "prerequisites": ["Basic Spear Training"],
+    "uniques": [
+    "[+1] Movement",
+    
+    
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 24,
+    "row": 1
+},
+{
+    "name": "Cavalry Bane", // 骑兵克星
+    "prerequisites": ["Armor-Piercing Spear"],
+    "uniques": [
+    "[+20]% Strength <vs [Light Cavalry] units>",
+    "[+20]% Strength <vs [Heavy Cavalry] units>",
+    
+    
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 22,
+    "row": 3
+},
+{
+    "name": "Immovable Fortress", // 不动如山
+    "prerequisites": ["Iron Wall Formation"],
+    "uniques": [
+    "[+20]% Strength <when defending>",
+    "[+10] HP when healing",
+    
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 23,
+    "row": 3
+},
+{
+    "name": "Lightning Support", // 闪电支援
+    "prerequisites": ["Forced March"],
+    "uniques": [
+    "Can move after attacking",
+    "[+15]% Strength <when attacking>",
+    ],
+    "unitTypes": ["Spearman"],
+    "column": 24,
+    "row": 2
+},
+
+
+
+
+
+
+
+
+
+
+//其他
+{
+    "name": "Suppression", // 压制
+    "uniques": [
+    "[-1] Movement",
+    ],
+},
+{
+    "name": "Flaming", // 燃烧
+    "uniques": [
+    "[This Unit] takes [10] damage <upon turn end>",
+    ],
+},
+
+
+
+
+
+
 
 ]
+/*
+"[+1] Movement",
+"[+1] Sight",
+"[+200]% Strength",
+"[9] additional attacks per turn",
+"Can move after attacking",
+"[This Unit] gains [2] movement",
+"[This Unit] loses [2] movement",
+<upon losing at least [5] HP in a single attack>
+<vs cities>
+<when attacking>
+<during a Golden Age>
+<in [Foreign Land] tiles>
+<in [Friendly Land] tiles>
+<when defending>
+<vs [Wounded] units>
+<when fighting in [Rough terrain] tiles>
+"Ignores Zone of Control",
+<upon being promoted>
+"[Target Unit] gains the [] status for [10] turn(s) <upon damaging a [Military] unit>",
+"[This Unit] takes [10] damage <upon turn end>",
+[{non-[Long-Range Naval]} {non-[Short-Range Naval]} {non-[Drones]}]
+"Ranged attacks may be performed over obstacles",
+
+"[]% to Flank Attack bonuses",
+*/
+

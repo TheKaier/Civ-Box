@@ -9,7 +9,7 @@
     "cityWorkRange":2,
     "baseCityBombardRange":1,
     "cityExpandRange":3,
-    "riverCountMultiplier": 0.04,
+    "riverCountMultiplier": 0.02,
     },
     "uniques":["Can trade civilization introductions for [10] Gold",
     "Cannot be used as permanent audiovisual mod",

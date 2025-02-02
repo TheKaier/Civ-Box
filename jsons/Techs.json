@@ -23,7 +23,7 @@
 {
         "columnNumber": 1,
         "era": "Ancient era",
-        "techCost": 25,
+        "techCost": 30,
         "buildingCost": 40,
         "wonderCost": 120,
         "techs": [
@@ -82,7 +82,7 @@
 {
         "columnNumber": 2,
         "era": "Ancient era",
-        "techCost": 40,
+        "techCost": 45,
         "buildingCost": 50,
         "wonderCost": 120,
         "techs": [
@@ -125,7 +125,7 @@
 {
 "name":"Wheel",//轮子
 "row":6,
-"prerequisites":["Bow and arrow"],
+"prerequisites":["Bow and arrow","Domestication"],
 "quote":"",
 "uniques":[
 "Provides [1] [Tech point]",
@@ -158,7 +158,7 @@
 {
         "columnNumber": 3,
         "era": "Classical era",
-        "techCost": 60,
+        "techCost": 70,
         "buildingCost": 60,
         "wonderCost": 150,
         "techs": [
@@ -240,7 +240,7 @@
 {
         "columnNumber": 4,
         "era": "Classical era",
-        "techCost": 100,
+        "techCost": 115,
         "buildingCost": 60,
         "wonderCost": 150,
         "techs": [
@@ -312,7 +312,7 @@
 {
         "columnNumber": 5,
         "era": "Medieval era",
-        "techCost": 160,
+        "techCost": 185,
         "buildingCost": 80,
         "wonderCost": 180,
         "techs": [
@@ -401,7 +401,7 @@
 {
         "columnNumber": 6,
         "era": "Medieval era",
-        "techCost": 300,
+        "techCost": 350,
         "buildingCost": 100,
         "wonderCost": 250,
         "techs": [

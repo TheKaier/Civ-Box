@@ -14,7 +14,7 @@
 		"Can build [Fishing Boats] improvements on tiles",
 		  "Automation is a primary action",
 		  "Can upgrade to [Swordsman] <after discovering [Ironware]> <if [Terracotta Army] is constructed>",
-		  "Can upgrade to [Composite Bowmen] <after discovering [Architectural construction]> <if [Terracotta Army] is constructed>",
+		  "Can upgrade to [Composite Bowman] <after discovering [Architectural construction]> <if [Terracotta Army] is constructed>",
 		  
 		  
 		],
@@ -26,7 +26,7 @@
 		"movement": 2,
 		"cost": 70,
 		"uniques": ["Founds a new city <by consuming this unit>",
-		"Excess Food converted to Production when under construction",
+		//"Excess Food converted to Production when under construction",
 			"Requires at least [2] population",
 			
 			],
@@ -42,7 +42,9 @@
 		"uniques": [
 		"Cannot attack",
 		//"May upgrade to [Archer] through ruins-like effects", "Never appears as a Barbarian unit",
-		//"[+1] Sight <after adopting [Nature seeker]>"
+		//"[+1] Sight <after adopting [Nature seeker]>",
+		"Can see invisible [Great General] units",
+		"Can see invisible [Siege Engines] units",
 		],
 		//"promotions": ["Ignore terrain cost"],
 		"attackSound": "nonmetalhit"
@@ -87,14 +89,14 @@
         //"uniqueTo": "",
         "cost": 25,
         "requiredTech": "Bow and arrow",
-        "upgradesTo": "Composite Bowmen",
+        "upgradesTo": "Composite Bowman",
         "obsoleteTech": "Architectural construction",
         //"promotions": [],
         "uniques": [],
         //"attackSound": ""
     },
     {
-        "name": "Composite Bowmen", // 复合弓兵
+        "name": "Composite Bowman", // 复合弓兵
         "unitType": "Archers",
         "range": 2,
         "movement": 2,
@@ -104,14 +106,14 @@
         //"uniqueTo": "",
         "cost": 45,
         "requiredTech": "Architectural construction",
-        "upgradesTo": "Crossbowmen",
+        "upgradesTo": "Crossbowman",
         "obsoleteTech": "Mechanics",
         //"promotions": [],
         "uniques": [],
         //"attackSound": ""
     },
     {
-        "name": "Crossbowmen", // 弩手
+        "name": "Crossbowman", // 弩手
         "unitType": "Archers",
         "range": 2,
         "movement": 2,
@@ -202,8 +204,8 @@
         //"attackSound": ""
     },
     {
-        "name": "Spearmen", // 矛兵
-        "unitType": "Spearmen",
+        "name": "Spearman", // 矛兵
+        "unitType": "Spearman",
         //"range": 2,
         "movement": 2,
         "strength": 11,
@@ -212,15 +214,15 @@
         //"uniqueTo": "",
         "cost": 35,
         "requiredTech": "Bronze ware",
-        "upgradesTo": "Pikemen",
+        "upgradesTo": "Pikeman",
         "obsoleteTech": "Civil service system",
         //"promotions": [],
         "uniques": [],
         //"attackSound": ""
     },
     {
-        "name": "Pikemen", // 长矛兵
-        "unitType": "Spearmen",
+        "name": "Pikeman", // 长矛兵
+        "unitType": "Spearman",
         //"range": 2,
         "movement": 2,
         "strength": 17,
@@ -239,7 +241,7 @@
         "name": "Cavalry", // 骑手
         "unitType": "Light Cavalry",
         //"range": 2,
-        "movement": 4,
+        "movement": 3,
         "strength": 12,
         //"rangedStrength": 10,
         //"replaces": "",
@@ -260,7 +262,7 @@
         "name": "Chariot Archer", // 战车射手
         "unitType": "Light Cavalry",
         "range": 2,
-        "movement": 4,
+        "movement": 3,
         "strength": 6,
         "rangedStrength": 10,
         //"replaces": "",
@@ -281,7 +283,7 @@
         "name": "Knight", // 骑士
         "unitType": "Heavy Cavalry",
         //"range": 2,
-        "movement": 5,
+        "movement": 4,
         "strength": 17,
         //"rangedStrength": 10,
         //"replaces": "",
@@ -539,7 +541,7 @@
 		"uniques": [
             "Empire enters a [8]-turn Golden Age <by consuming this unit>",
             "[+15]% Strength bonus for [Military] units within [2] tiles",
-            
+            "Invisible to non-adjacent units",
             
             
             "Can instantly construct a [Citadel] improvement <by consuming this unit>",

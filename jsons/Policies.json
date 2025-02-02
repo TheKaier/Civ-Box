@@ -64,6 +64,7 @@
     "Provides [1] [Imperial jurisdiction]",
     "[+1 Faith] from every [Shrine]",
     "[+1 Faith, +1 Gold] per [4] population [in all cities]",
+    "Adopt [Feudal]",//国家偏好
     ],
     "row": 4,
     "column": 1
@@ -90,7 +91,7 @@
     "Provides [1] [Imperial jurisdiction]",
     "[+25]% growth [in capital]",
     "[+2 Food, +2 Happiness] [in capital]",
-    
+    "Adopt [Feudal]",//国家偏好
     ],
     "row": 4,
     "column": 3
@@ -159,6 +160,7 @@
     "Provides [1] [Imperial jurisdiction]",
     "Provides a [Aqueduct] in your first [4] cities for free",
     "[+1 Culture, +1 Gold] per [3] population [in capital]",
+    "Adopt [Enlightenment]",//国家偏好
     ],
     "row": 4,
     "column": 7
@@ -183,6 +185,7 @@
     "Provides [1] [Imperial jurisdiction]",
     "Provides the cheapest [Science] building in your first [4] cities for free",
     "[+1 Science, +1 Gold] per [3] population [in capital]",
+    "Adopt [Enlightenment]",//国家偏好
     ],
     "row": 4,
     "column": 9
@@ -277,6 +280,7 @@
     "Provides [1] [Focal point]",
     "[-10]% Unhappiness from [Population] [in all non-occupied cities]",
     "Free [Settler] appears",
+    "Adopt [Feudal]",//国家偏好
     ],
     "row": 4,
     "column": 1
@@ -299,6 +303,7 @@
     "Provides [1] [Focal point]",
     "Free [Settler] appears",
     "[+1 Culture] [in all cities]",
+    "Adopt [Feudal]",//国家偏好
     ],
     "row": 4,
     "column": 3
@@ -352,6 +357,7 @@
     "Only available <after adopting [Collective Deliberation]>",
     "Only available <before adopting [Independent Public Opinion]>",
     "[+1 Culture, +1 Happiness] per [5] population [in all cities]",
+    "Adopt [Enlightenment]",//国家偏好
     ],
     "row": 3,
     "column": 7
@@ -374,6 +380,7 @@
     "Only available <after adopting [Collective Deliberation]>",
     "Only available <before adopting [Democratic Politics]>",
     "[+1 Gold, +1 Science] per [3] population [in capital]",
+    "Adopt [Enlightenment]",//国家偏好
     ],
     "row": 3,
     "column": 9
@@ -430,7 +437,13 @@
         "uniques": [
 "Only available <before adopting [Enlightenment Policy]>",
         //"Unavailable",
-	"Free Social Policy",
+	//"Free Social Policy",
+	
+	"[+20]% growth [in all cities]",
+    "[+10]% [Production] [in capital]",
+	
+	
+	
 ],
 
         "policies": [
@@ -450,7 +463,8 @@
     "uniques": [
     "Only available <after adopting [Feudal]>",
     "Only available <before adopting [Scholar Group]>",
-    
+    "New [Military] units start with [5] Experience [in capital]",
+    "[+2 Culture, +1 Happiness] [in all cities with a garrison]",
     ],
     "row": 2,
     "column": 2
@@ -460,7 +474,8 @@
     "uniques": [
     "Only available <after adopting [Rigid Hierarchy]>",
     "Only available <before adopting [Offering and Accepting Advice]>",
-    
+    "[+1 Culture, +1 Happiness] per [2] population [in capital]",
+    "[+2 Production, +1 Happiness] per [5] population [in all cities with a garrison]",
     ],
     "row": 3,
     "column": 1
@@ -469,6 +484,9 @@
     "name": "Eternal Emperor",
     "uniques": [
     "Only available <after adopting [Autocratic Rule]>",
+    "[-10]% Culture cost of adopting new Policies",
+    "[+1] population [in capital]",
+    "New [Military] units start with [5] Experience [in capital]",
     ],
     "row": 4,
     "column": 1
@@ -478,7 +496,8 @@
     "uniques": [
     "Only available <after adopting [Rigid Hierarchy]>",
     "Only available <before adopting [Autocratic Rule]>",
-    
+    "[+1 Culture, +1 Happiness] per [4] population [in all cities]",
+    "[+2 Production] [in all cities]",
     ],
     "row": 3,
     "column": 3
@@ -487,6 +506,9 @@
     "name": "Core of the Empire",
     "uniques": [
     "Only available <after adopting [Offering and Accepting Advice]>",
+    "[-10]% Unhappiness from [Population] [in all non-occupied cities]",
+    "[100]% of excess happiness converted to [Gold]",
+    "[50]% of excess happiness converted to [Culture]",
     ],
     "row": 4,
     "column": 3
@@ -495,6 +517,8 @@
     "name": "Centralization of Power",
     "uniques": [
     "Only available <after adopting [Feudal]>",
+    "[+10]% Production when constructing [All] buildings [in all cities]",
+    "[+1 Production, +1 Science] [in all cities]",
     ],
     "row": 2,
     "column": 5
@@ -503,6 +527,8 @@
     "name": "Land Consolidation",
     "uniques": [
     "Only available <after adopting [Centralization of Power]>",
+    "[-33]% Gold cost of acquiring tiles [in all cities]",
+    "[-10]% Culture cost of natural border growth [in all cities]",
     ],
     "row": 3,
     "column": 5
@@ -511,6 +537,8 @@
     "name": "Dumbing Down the Masses",
     "uniques": [
     "Only available <after adopting [Land Consolidation]>",
+    "Empire enters golden age",
+    "[+15]% Production when constructing [All] wonders [in all cities]",
     ],
     "row": 4,
     "column": 5
@@ -520,8 +548,8 @@
     "uniques": [
     "Only available <after adopting [Feudal]>",
     "Only available <before adopting [Rigid Hierarchy]>",
-    
-    
+    "[50]% of excess happiness converted to [Science]",
+    "[+1 Science] [in all cities]",
     ],
     "row": 2,
     "column": 8
@@ -531,7 +559,8 @@
     "uniques": [
     "Only available <after adopting [Scholar Group]>",
     "Only available <before adopting [Imperial Examination for Recruitment]>",
-    
+    "[-10]% Unhappiness from [Population] [in all non-occupied cities]",
+    "[+2 Happiness] [in capital]",
     ],
     "row": 3,
     "column": 7
@@ -540,6 +569,9 @@
     "name": "Eternal Empire",
     "uniques": [
     "Only available <after adopting [Ideological Suppression]>",
+    "New [Military] units start with [10] Experience [in all cities with a garrison]",
+    "[+27]% Strength for cities <with a garrison>",
+    "Empire enters golden age",
     ],
     "row": 4,
     "column": 7
@@ -549,7 +581,8 @@
     "uniques": [
     "Only available <after adopting [Scholar Group]>",
     "Only available <before adopting [Ideological Suppression]>",
-    
+    "[+1 Culture, +1 Science] per [2] population [in all cities]",
+    "[-10]% Culture cost of adopting new Policies",
     ],
     "row": 3,
     "column": 9
@@ -558,6 +591,7 @@
     "name": "Feudal Bureaucracy",
     "uniques": [
     "Only available <after adopting [Imperial Examination for Recruitment]>",
+    "Provides the cheapest [Production] building in your first [4] cities for free",
     ],
     "row": 4,
     "column": 9
@@ -600,7 +634,9 @@
         "uniques": [
 "Only available <before adopting [Feudal Policy]>",
         //"Unavailable",
-	"Free Social Policy",
+	//"Free Social Policy",
+	"[+20]% [Science] <while the empire is happy>",
+	
 ],
 
         "policies": [
@@ -620,7 +656,7 @@
     "uniques": [
     "Only available <after adopting [Enlightenment]>",
     "Only available <before adopting [Humanism]>",
-    
+    "[+1 Science] from all [Science] buildings",
     ],
     "row": 2,
     "column": 2
@@ -630,7 +666,7 @@
     "uniques": [
     "Only available <after adopting [Rationalism]>",
     "Only available <before adopting [Natural Science]>",
-    
+    "[+2 Science, +1 Gold] from every specialist [in all cities]",
     ],
     "row": 3,
     "column": 1
@@ -639,6 +675,12 @@
     "name": "Supremacy of Science",
     "uniques": [
     "Only available <after adopting [Professional Scholars]>",
+    "[+1 Happiness] from every [Library]",
+    "[+1 Happiness] from every [University]",
+    //"[+1 Happiness] from every [Observatory]",
+    //"[+1 Happiness] from every [Public School]",
+    "[+17]% [Science] from every [University]",
+    
     ],
     "row": 4,
     "column": 1
@@ -648,7 +690,7 @@
     "uniques": [
     "Only available <after adopting [Rationalism]>",
     "Only available <before adopting [Professional Scholars]>",
-    
+    "[+2 Science] from all [Wonder] buildings",
     ],
     "row": 3,
     "column": 3
@@ -657,6 +699,8 @@
     "name": "Elimination of the Unknown",
     "uniques": [
     "Only available <after adopting [Natural Science]>",
+    "[1] Free Technologies",
+    "[+10]% [Science] <while the empire is happy>",
     ],
     "row": 4,
     "column": 3
@@ -665,6 +709,8 @@
     "name": "Personnel",
     "uniques": [
     "Only available <after adopting [Enlightenment]>",
+    "[+10]% growth [in all cities]",
+    "[+5]% [Production] [in all cities]",
     ],
     "row": 2,
     "column": 5
@@ -673,6 +719,8 @@
     "name": "Geography",
     "uniques": [
     "Only available <after adopting [Personnel]>",
+    "[+2 Production] [in all cities]",
+    "[-10]% Culture cost of natural border growth [in all cities]",
     ],
     "row": 3,
     "column": 5
@@ -681,6 +729,9 @@
     "name": "Astronomy",
     "uniques": [
     "Only available <after adopting [Geography]>",
+    "[-10]% Culture cost of adopting new Policies",
+    "Empire enters golden age",
+    "[+1 Science] from each Trade Route",
     ],
     "row": 4,
     "column": 5
@@ -690,7 +741,7 @@
     "uniques": [
     "Only available <after adopting [Enlightenment]>",
     "Only available <before adopting [Rationalism]>",
-    
+    "[+2 Culture, +2 Science, +2 Production] [in all cities connected to capital]",
     ],
     "row": 2,
     "column": 8
@@ -700,7 +751,8 @@
     "uniques": [
     "Only available <after adopting [Humanism]>",
     "Only available <before adopting [Liberal Thought]>",
-    
+    "[+25]% [Gold] from Trade Routes",
+    "[+17]% [Science] from every [University]",
     ],
     "row": 3,
     "column": 7
@@ -709,6 +761,9 @@
     "name": "Secularism",
     "uniques": [
     "Only available <after adopting [Value of the Present World]>",
+    "[+1 Gold] from all [Science] buildings",
+    "[-33]% Gold cost of acquiring tiles [in all cities]",
+    "Provides the cheapest [Gold] building in your first [4] cities for free",
     ],
     "row": 4,
     "column": 7
@@ -718,8 +773,8 @@
     "uniques": [
     "Only available <after adopting [Humanism]>",
     "Only available <before adopting [Value of the Present World]>",
-    
-    
+    "[+2 Culture] from each Trade Route",
+    "[+10]% growth [in all cities]",
     ],
     "row": 3,
     "column": 9
@@ -728,6 +783,9 @@
     "name": "Free Cities",
     "uniques": [
     "Only available <after adopting [Liberal Thought]>",
+    "Empire enters golden age",
+    "[-10]% Culture cost of adopting new Policies",
+    "[+3 Culture, +1 Happiness] per [7] population [in all cities]",
     ],
     "row": 4,
     "column": 9
