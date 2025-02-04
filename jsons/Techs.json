@@ -205,6 +205,7 @@
 "quote":"",
 "uniques":[
 "Provides [1] [Tech point]",
+"Enables conversion of city production to [Gold]",
 ]
 },
 {
@@ -252,6 +253,7 @@
 "uniques":[
 "Gain enough Faith for [33]% of a Great Prophet",
 "Provides [1] [Tech point]",
+"Enables conversion of city production to [Faith]",
 ]
 },
 {
@@ -272,6 +274,7 @@
 "quote":"",
 "uniques":[
 "Provides [1] [Tech point]",
+"Enables conversion of city production to [Culture]",
 ]
 },
 {
@@ -281,6 +284,11 @@
 "quote":"",
 "uniques":[
 "Provides [1] [Tech point]",
+"Provides [1] [Imperial Covenant Chief]",//正
+"Provides [1] [Imperial Covenant Deputy]",//副
+
+
+
 ]
 },
 {
@@ -334,6 +342,7 @@
 "quote":"",
 "uniques":[
 "Enables Research agreements",
+"Enables conversion of city production to [Science]",
 "Provides [1] [Tech point]",
 
 ]

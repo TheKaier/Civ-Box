@@ -487,6 +487,8 @@
 		"name": "Great Artist",//大艺术家
 		"unitType": "Civilian",
 		"uniques": [
+		"Can generate a large amount of culture",
+		"Is part of Great Person group [Culture]",
             "Empire enters a [8]-turn Golden Age <by consuming this unit>",
             "Can instantly construct a [Landmark] improvement <by consuming this unit>",
             "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
@@ -496,6 +498,7 @@
 		"name": "Great Scientist",//大科学家
 		"unitType": "Civilian",
 		"uniques": [
+		"Is part of Great Person group [Science]",
             "Can hurry technology research",
             "Can instantly construct a [Academy] improvement <by consuming this unit>",
             "Great Person - [Science]", "Unbuildable", "Uncapturable"],
@@ -504,7 +507,9 @@
 	{
 		"name": "Great Merchant",//大商人
 		"unitType": "Civilian",
-		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [50] Influence",
+		"uniques": [
+		"Is part of Great Person group [Gold]",
+		"Can undertake a trade mission with City-State, giving a large sum of gold and [50] Influence",
             "Can instantly construct a [Customs house] improvement <by consuming this unit>",
 			"Great Person - [Gold]", "Unbuildable", "Uncapturable",
 			],
@@ -513,7 +518,9 @@
 	{
 		"name": "Great Engineer",//大工程师
 		"unitType": "Civilian",
-		"uniques": ["Can speed up construction of a building",
+		"uniques": [
+		"Is part of Great Person group [Production]",
+		"Can speed up construction of a building",
             "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
             "Great Person - [Production]", "Unbuildable", "Uncapturable",
             ],

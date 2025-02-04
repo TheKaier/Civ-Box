@@ -11,10 +11,86 @@
 		"uniques": ["Indicates the capital city",
 		"Consumes [1] [Degree of social development] <when above [50] [Degree of social development]>",//防溢出
         "Provides [1] [Degree of social development] <when below [-30] [Degree of social development]>",//防溢出
+		//"Consumes [30] [Tourism performance]",
+		//干扰文化霸权
+        "Instantly consumes [100] [Tourism performance] <if [Interference Culture Hegemony] is constructed by anybody> <upon turn end>",
+        "Instantly provides [10] [Tourism performance] <when below [0] [Tourism performance]> <upon turn end>",
+		
+		//"Triggers a [Revolt] event <upon turn end>",
+		]
+	},
+	//胜利方式
+	//文化
+	{
+		"name": "Culture Hegemony",//文化霸权
+		"cost": 450,
+		"isWonder": true,
+		"uniques": [
+		"Cannot be hurried",
+		"Only available <when [Cultural] Victory is enabled>",
+		"Cost increases by [50] per owned city",
+		"Only available <when above [999] [Tourism performance]>",
+		]
+	},
+	{
+		"name": "Interference Culture Hegemony",//干扰文化霸权
+		"cost": 10,
+		"uniques": [
+		"Unsellable",
+		"Can only be built <in [in capital] cities>",
+		"Only available <when [Cultural] Victory is enabled>",
+		"Only available <when above [149] [Tourism performance]> <when below [1] [Culture Hegemony point]> <if [Strive for Culture Hegemony] is constructed by anybody>",
+		"Automatically built in all cities where it is buildable",
 		
 		
 		]
 	},
+	{
+		"name": " Remove Interference Culture Hegemony",//移除干扰文化霸权
+		"cost": 10,
+		"uniques": [
+		"Only available <when [Cultural] Victory is enabled>",
+		"Only available <when below [150] [Tourism performance]> <in cities with a [Interference Culture Hegemon]>",
+		"Automatically built in all cities where it is buildable",
+		"Remove [Remove Interference Culture Hegemony] [in this city]",
+		"Remove [Interference Culture Hegemony] [in this city]",
+		]
+	},
+	{
+		"name": "Strive for Culture Hegemony",//争取文化霸权
+		"cost": 10,
+		"uniques": [
+		"Unsellable",
+		"Can only be built <in [in capital] cities>",
+		"Only available <when [Cultural] Victory is enabled>",
+		"Only available <when above [500] [Tourism performance]>",
+		"Automatically built in all cities where it is buildable",
+		"Provides [1] [Culture Hegemony point]",
+		]
+	},
+	{
+		"name": "Remove Strive for Culture Hegemony",//移除争取文化霸权
+		"cost": 10,
+		"uniques": [
+		"Only available <when [Cultural] Victory is enabled>",
+		"Only available <when below [500] [Tourism performance]> <in cities with a [Strive for Culture Hegemony]>",
+		"Automatically built in all cities where it is buildable",
+		"Remove [Remove Strive for Culture Hegemony] [in this city]",
+		"Remove [Strive for Culture Hegemony] [in this city]",
+		]
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	{
 		"name": "Original capital",//原始首都证明
 		"cost": 1,
@@ -166,13 +242,68 @@
 	},
 	
 	
-	
-	
-	
-	
-	
-	
-	
+	{
+		"name": "Chief Imperial Covenant",//帝国盟约
+		"cost": 50,
+		"requiredTech": "Guild"
+		"uniques": [
+		"Unsellable",
+		"Imperial Covenant",
+        "Destroyed when the city is captured",
+        "Can only be built <in [in capital] cities>",
+        "Only available <in cities without a [Imperial Covenant]>",
+        "Consumes [2] [Imperial Covenant Chief]",
+        
+        "[+15]% [Science] [in all cities]",
+        "[+15]% [Culture] [in all cities]",
+        "[+15]% [Gold] [in all cities]",
+        "Provides [4] [Army size]",
+        
+        "[-30]% [Science] [in all cities] <when above [0] [Imperial Covenant Deputy]>",
+        "[-30]% [Culture] [in all cities] <when above [0] [Imperial Covenant Deputy]>",
+        "[-30]% [Gold] [in all cities] <when above [0] [Imperial Covenant Deputy]>",
+        "Consumes [6] [Army size] <when above [0] [Imperial Covenant Deputy]>",
+		]
+	},
+	{
+		"name": "Deputy Imperial Covenant",//帝国盟约
+		"cost": 50,
+		"requiredTech": "Guild"
+		"uniques": [
+		"Unsellable",
+		"Imperial Covenant",
+        "Destroyed when the city is captured",
+        "Can only be built <in [in capital] cities>",
+        "Only available <in cities without a [Imperial Covenant]>",
+        "Consumes [2] [Imperial Covenant Deputy]",
+        
+        "[+15]% [Science] [in all cities]",
+        "[+15]% [Culture] [in all cities]",
+        "[+15]% [Gold] [in all cities]",
+        "Provides [4] [Army size]",
+        
+        "[-30]% [Science] [in all cities] <when above [0] [Imperial Covenant Chief]>",
+        "[-30]% [Culture] [in all cities] <when above [0] [Imperial Covenant Chief]>",
+        "[-30]% [Gold] [in all cities] <when above [0] [Imperial Covenant Chief]>",
+        "Consumes [6] [Army size] <when above [0] [Imperial Covenant Chief]>",
+		]
+	},
+	{
+		"name": "Tear up Imperial Covenant",//撕毁帝国盟约
+		"cost": 5,
+		"requiredTech": "Guild"
+		"uniques": [
+		"Unsellable",
+        "Destroyed when the city is captured",
+        "Can only be built <in [in capital] cities>",
+        "Only available <in cities with a [Imperial Covenant]>",
+        "Consumes [1] [Imperial Covenant Chief]",
+        "Consumes [1] [Imperial Covenant Deputy]",
+        "Remove [Chief Imperial Covenant] [in this city]",
+        "Remove [Deputy Imperial Covenant] [in this city]",
+        "Remove [Tear up Imperial Covenant] [in this city]",
+		]
+	},
 	
 	
 	
@@ -369,7 +500,7 @@
         "[+3 Food] [in this city] <when above [-1] [Food Caravan]>",
         "Consumes [1] [Food Caravan]",
         
-        "Only available <in cities without a [Trade]>",
+        "Only available <in cities without a [Trade]><when above [0] [Food Caravan]>",
 		]
 	},
 	{
@@ -381,7 +512,7 @@
         "[+3 Food] [in this city] <when above [-1] [Food Caravan]>",
         "Consumes [1] [Food Caravan]",
         
-        "Only available <in cities without a [Trade]>",
+        "Only available <in cities without a [Trade]><when above [0] [Food Caravan]>",
 		]
 	},
 	{
@@ -393,10 +524,9 @@
         "[+3 Food] [in this city] <when above [-1] [Food Caravan]>",
         "Consumes [1] [Food Caravan]",
         
-        "Only available <in cities without a [Trade]>",
+        "Only available <in cities without a [Trade]><when above [0] [Food Caravan]>",
 		]
 	},
-	
 	
 	
 	
@@ -412,12 +542,12 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+25]% [Production] [in this city]",
+        "[+20]% [Production] [in this city]",
         "[+3 Production] [in this city]",
-        "[+1 Production] per [2] population [in this city]",
-        "Consumes [3] [Focal point]",
+        "[+1 Production] per [4] population [in this city]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Production II] [in this city]",
+        //"Remove [specialize Production II] [in this city]",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
 	},
@@ -429,11 +559,11 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+15]% [Production] [in this city]",
+        "[+5]% [Production] [in this city]",
         "[+1 Production] per [3] population [in this city]",
-        "Consumes [2] [Focal point]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Production I] [in this city]",
+        //"Remove [specialize Production I] [in this city]",
         "Only available <in cities without a [specialize Production III]>",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
@@ -461,12 +591,12 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+75]% [Gold] [in this city]",
+        "[+25]% [Gold] [in this city]",
         "[+1 Gold] from all [Gold] buildings <in this city>",
-        "[+1 Gold] per [1] population [in this city]",
-        "Consumes [3] [Focal point]",
+        "[+1 Gold] per [2] population [in this city]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Gold II] [in this city]",
+        //"Remove [specialize Gold II] [in this city]",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
 	},
@@ -478,11 +608,11 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+50]% [Gold] [in this city]",
+        "[+25]% [Gold] [in this city]",
         "[+1 Gold] per [2] population [in this city]",
-        "Consumes [2] [Focal point]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Gold I] [in this city]",
+        //"Remove [specialize Gold I] [in this city]",
         "Only available <in cities without a [specialize Gold III]>",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
@@ -510,12 +640,12 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+25]% [Science] [in this city]",
-        "[+2 Science] from all [Science] buildings <in this city>",
+        "[+10]% [Science] [in this city]",
+        "[+1 Science] from all [Science] buildings <in this city>",
         "[+1 Science] per [2] population [in this city]",
-        "Consumes [3] [Focal point]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Science II] [in this city]",
+        //"Remove [specialize Science II] [in this city]",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
 	},
@@ -527,11 +657,11 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+15]% [Science] [in this city]",
+        "[+5]% [Science] [in this city]",
         "[+1 Science] from all [Science] buildings <in this city>",
-        "Consumes [2] [Focal point]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Science I] [in this city]",
+        //"Remove [specialize Science I] [in this city]",
         "Only available <in cities without a [specialize Science III]>",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
@@ -559,12 +689,12 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+25]% [Culture] [in this city]",
+        "[+10]% [Culture] [in this city]",
         "[+1 Culture] from all [Culture] buildings <in this city>",
-        "[+3 Culture] from every [Great Improvement]",
-        "Consumes [3] [Focal point]",
-        
-        "Remove [specialize Culture II] [in this city]",
+        "[+2 Culture] from every [Great Improvement]",
+        "Consumes [1] [Focal point]",
+        "Provides [1] [Tourism performance]",
+        //"Remove [specialize Culture II] [in this city]",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
 	},
@@ -576,11 +706,11 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+20]% [Culture] [in this city]",
+        "[+5]% [Culture] [in this city]",
         "[+2 Culture] from every [Great Improvement]",
-        "Consumes [2] [Focal point]",
-        
-        "Remove [specialize Culture I] [in this city]",
+        "Consumes [1] [Focal point]",
+        "Provides [1] [Tourism performance]",
+        //"Remove [specialize Culture I] [in this city]",
         "Only available <in cities without a [specialize Culture III]>",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
@@ -594,6 +724,7 @@
         "specialize",
         "[+15]% [Culture] [in this city]",
         "Consumes [1] [Focal point]",
+        "Provides [1] [Tourism performance]",
         "Only available <in cities without a [specialize]>",
         "Only available <in cities without a [specialize Culture II]>",
         "Only available <in cities without a [specialize Culture III]>",
@@ -608,12 +739,11 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+66]% [Faith] [in this city]",
+        "[+15]% [Faith] [in this city]",
         "[+4 Faith] from every [Holy site]",
-        "[+1 Faith] per [2] population [in this city]",
-        "Consumes [3] [Focal point]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Faith II] [in this city]",
+        //"Remove [specialize Faith II] [in this city]",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
 	},
@@ -625,11 +755,11 @@
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "[+50]% [Faith] [in this city]",
+        "[+17]% [Faith] [in this city]",
         "[+1 Faith] per [2] population [in this city]",
-        "Consumes [2] [Focal point]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Faith I] [in this city]",
+        //"Remove [specialize Faith I] [in this city]",
         "Only available <in cities without a [specialize Faith III]>",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
@@ -651,34 +781,34 @@
 	},
 	{
 		"name": "specialize Military III",//专精
-		"cityStrength": 10,
-		"cityHealth": 150,
+		"cityStrength": 5,
+		"cityHealth": 50,
 		"cost": 15,
 		"requiredBuilding": "specialize Military II",
 		"uniques": [
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "Consumes [3] [Focal point]",
+        "Consumes [1] [Focal point]",
         
-        "Remove [specialize Military II] [in this city]",
+        //"Remove [specialize Military II] [in this city]",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
 	},
 	{
 		"name": "specialize Military II",//专精
-		"cityStrength": 5,
-		"cityHealth": 100,
+		"cityStrength": 3,
+		"cityHealth": 50,
 		"cost": 10,
 		"requiredBuilding": "specialize Military I",
 		"uniques": [
 		"Unsellable",
         "Destroyed when the city is captured",
         "specialize",
-        "Consumes [2] [Focal point]",
+        "Consumes [1] [Focal point]",
         
         "Only available <in cities without a [specialize Military III]>",
-        "Remove [specialize Military I] [in this city]",
+        //"Remove [specialize Military I] [in this city]",
         "Only available <for [Colonize] Civilizations>",//目前留作
 		]
 	},
@@ -720,7 +850,7 @@
 		"cost": 25,
 		"maintenance": 1,
 		"uniques": [
-		
+		"Provides [1] [Tourism performance]",
 		"Destroyed when the city is captured",
 		
 		]
@@ -757,6 +887,7 @@
 		"greatPersonPoints": {"Great Engineer": 1},
         "uniques": ["[+15]% [Food] [in all cities]",
         "[+10]% Production when constructing [Archers] units [in all cities]",
+        "Provides [5] [Tourism performance]",
         ],
 		"requiredTech": "Bow and arrow",
 		"quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson"
@@ -811,25 +942,25 @@
 		//"Free Technology",
 		"Gain a free [Library] [in this city]"
 		"[1] free random researchable Tech(s) from the [Ancient era]",
-		
+		"Provides [5] [Tourism performance]",
 		],
 		"quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
 	},
 	{
-		"name": "Circus",
+		"name": "Circus",//马戏场
 		"requiredNearbyImprovedResources": ["Ivory","Horses"],
 		"happiness": 2,
         "cost": 45,
 		"requiredTech": "Hunting"
 	},
 	{
-		"name": "Water Mill",
+		"name": "Water Mill",//水磨
 		"maintenance": 2,
 		//"food": 1,
 		//"production": 1,
         "cost": 45,
 		"uniques": [
-		"[+1 Production] from [Farm] tiles [in this city] <with [3] to [6] neighboring [Farm] tiles>"
+		"[+1 Production] from [Farm] tiles [in this city] <with [2] to [6] neighboring [Farm] tiles>"
 		],
 		"requiredTech": "Wheel"
 	},
@@ -850,6 +981,7 @@
 		//"[-25]% construction time for [All] improvements",
 		"[2] free [Worker] units appear"
 		"[+2 Production] [in all cities]",
+		"Provides [5] [Tourism performance]",
 		],
 		"requiredTech": "Bricklaying",
 		"quote": "'O, let not the pains of death which come upon thee enter into my body. I am the god Tem, and I am the foremost part of the sky, and the power which protecteth me is that which is with all the gods forever.' - The Book of the Dead, translated by Sir Ernest Alfred Wallis Budge"
@@ -862,6 +994,7 @@
 		"uniques": [
 		"Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",
 			"[+2 Gold] from [Marble] tiles [in this city]", "[+2 Gold] from [Stone] tiles [in this city]",
+			"Provides [5] [Tourism performance]",
 			],
 		"requiredTech": "Masonry",
 		"quote": "'The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other men's lives.' - Pericles"
@@ -882,9 +1015,11 @@
 		"culture": 2,
 		"isWonder": true,
 		"uniques": [
-		"[+15]% Strength <for [15] turns>",
+		"[+15]% Strength <for [20] turns>",
+		"Provides [4] [War support]",
 		"Free [Great General] appears",
 		"Provides [6] [Army size]",
+		"Provides [5] [Tourism performance]",
 		],
 		"requiredTech": "Bronze ware",
 		"quote": "'He spoke, the son of Kronos, and nodded his head with the dark brows, and the immortally anointed hair of the great god swept from his divine head, and all Olympos was shaken' - The Iliad"
@@ -906,6 +1041,7 @@
 		"uniques": ["Must be next to [Coast]", "[+1] Movement <for [{Military} {Water}] units>",
 			"[+1] Sight <for [{Military} {Water}] units>", "Gain a free [Lighthouse] [in this city]",
 			"[+1 Production] from every [Lighthouse]",
+			"Provides [5] [Tourism performance]",
 			],
 		"requiredTech": "Navigation",
 		"quote": "'They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.' - The Bible, Psalms 107:23-24"
@@ -948,7 +1084,9 @@
 		"culture": 1,
 		"isWonder": true,
 		"requiredTech": "Mathematics",
-		"uniques": ["Gain a free [Garden] [in this city]"],
+		"uniques": ["Gain a free [Garden] [in this city]",
+		"Provides [5] [Tourism performance]",
+		],
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},*/
 	{
@@ -963,6 +1101,10 @@
 		"culture": 6,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
+		"uniques": [
+			"Provides [4] [Army size]",
+			"Provides [1] [Tourism performance]",
+			],
 		"requiredTech": "Architectural construction",
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu"
 	},
@@ -997,7 +1139,10 @@
 		"culture": 3,
 		"greatPersonPoints": {"Great Scientist": 1},
 		"isWonder": true,
-		"uniques": ["Free Social Policy"],
+		"uniques": ["Free Social Policy",
+		"Provides [5] [Tourism performance]",
+		
+		],
 		"requiredTech": "Philosophy",
 		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
 	},*/
@@ -1008,7 +1153,10 @@
 		"requiredBuilding": "Monument",
 		"maintenance": 2,
 		"cost": 60,
-		"uniques": ["Destroyed when the city is captured"],
+		"uniques": ["Destroyed when the city is captured",
+		"Provides [1] [Tourism performance]",
+		
+		],
 		"requiredTech": "Drama"
 	},
 	/*{
@@ -1045,6 +1193,7 @@
 		"uniques": ["Must be next to [Desert]",
 		"[+2 Production] from [Desert] tiles without [Flood plains] [in this city]",
 		"Gain a free [Amphitheater] [in this city]",
+		"Provides [5] [Tourism performance]",
 		//"[+6 Culture] [in this city] <after discovering [Archaeology]>"
 		],
 		"requiredTech": "Monetary system",
@@ -1065,6 +1214,7 @@
 		"uniques": [
 		"Enemy [Land] units must spend [1] extra movement points when inside your territory",
 		//"Enemy [Land] units must spend [1] extra movement points when inside your territory <before discovering [Dynamite]>",
+		"Provides [5] [Tourism performance]",
 			"Gain a free [Walls] [in this city]"],
 		"requiredTech": "Engineering",
 		"quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.' - Sun Tzu"
@@ -1091,7 +1241,11 @@
 		"gold": 5,
 		"greatPersonPoints": {"Great Merchant": 1},
 		"isWonder": true,
-		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]"],
+		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]",
+		"Provides [5] [Tourism performance]",
+		
+		
+		],
 		"requiredTech": "Iron Working",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
 	},*/
@@ -1118,7 +1272,10 @@
 		"isWonder": true,
 		"uniques": ["Gain a free [Mosque] [in this city]", "Only available <when religion is enabled>",
             "All newly-trained [Missionary] units [in this city] receive the [Devout] promotion",
-            "All newly-trained [Great Prophet] units [in this city] receive the [Devout] promotion"],
+            "All newly-trained [Great Prophet] units [in this city] receive the [Devout] promotion",
+            "Provides [5] [Tourism performance]",
+            
+            ],
 		"requiredTech": "Theology",
 		"quote": "'With the magnificence of eternity before us, let time, with all its fluctuations, dwindle into its own littleness.' - Thomas Chalmers"
 	},
@@ -1140,7 +1297,10 @@
 		"happiness": 4,
 		"greatPersonPoints": {"Great Engineer": 1},
 		"isWonder": true,
-		"uniques": ["[+50]% Golden Age length"],
+		"uniques": ["[+50]% Golden Age length",
+		"Provides [5] [Tourism performance]",
+		
+		],
 		"requiredTech": "Civil Service",
 		"quote": "'The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come.' - The Books of Chilam Balam"
 	},*/
@@ -1162,7 +1322,7 @@
 		"culture": 1,
 		"isWonder": true,
 		"uniques": ["[+25]% [Gold] from Trade Routes","Must have an owned [Mountain] within [2] tiles",
-		//"Provides [1] [E_P]",
+		"Provides [5] [Tourism performance]",
 		],
 		"requiredTech": "Guilds",
 		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.' - Hiram Bingham"
@@ -1220,7 +1380,10 @@
 		"culture": 1,
 		"greatPersonPoints": {"Great Engineer": 1},
 		"isWonder": true,
-		"uniques": ["[-25]% Culture cost of natural border growth [in all cities]","[-25]% Gold cost of acquiring tiles [in all cities]"],
+		"uniques": ["[-25]% Culture cost of natural border growth [in all cities]","[-25]% Gold cost of acquiring tiles [in all cities]",
+		"Provides [5] [Tourism performance]",
+		
+		],
 		"requiredTech": "Pedagogy",
 		"quote": "'The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.' - Antonio da Magdalena"
 	},*/
@@ -1240,7 +1403,11 @@
 		"isWonder": true,
 		"percentStatBonus": {"culture": 20},
 		"uniques": ["All newly-trained [relevant] units [in this city] receive the [Drill I] promotion",
-			"Gain a free [Castle] [in this city]"],
+			"Gain a free [Castle] [in this city]",
+			"Provides [5] [Tourism performance]",
+			
+			
+			],
 		"requiredTech": "Knighthood",
 		"quote": "'Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.' - Joseph Addison"
 	},
@@ -1293,14 +1460,21 @@
 		"requiredBuilding": "Amphitheater",
 		"maintenance": 2,
 		"requiredTech": "Acoustics",
-		"uniques": ["Destroyed when the city is captured"]
+		"uniques": ["Destroyed when the city is captured",
+		"Provides [1] [Tourism performance]",
+		
+		
+		]
 	},
 	/*{
 		"name": "Sistine Chapel",
 		"culture": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 2},
-		"uniques": ["[+25]% [Culture] [in all cities]"],
+		"uniques": ["[+25]% [Culture] [in all cities]",
+		"Provides [5] [Tourism performance]",
+		
+		],
 		"requiredTech": "Acoustics",
 		"quote": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti"
 	},*/
@@ -1319,7 +1493,7 @@
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
 		"uniques": ["[-10]% Unhappiness from [Population] [in all cities]",
-		//"Provides [1] [C_P]",
+		"Provides [5] [Tourism performance]",
 		],
 		"requiredTech": "Banking",
 		"quote": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock"
@@ -1337,7 +1511,10 @@
 		"culture": 1,
 		"isWonder": true,
 		"greatPersonPoints": {"Great Artist": 1},
-		"uniques": ["[+25]% Great Person generation [in all cities]", "Free Great Person"],
+		"uniques": ["[+25]% Great Person generation [in all cities]", "Free Great Person",
+		"Provides [5] [Tourism performance]",
+		
+		],
 		"requiredTech": "Printing Press",
 		"quote": "'Don't clap too hard - it's a very old building.' - John Osbourne"
 	},
@@ -1347,7 +1524,11 @@
 		"isWonder": true,
 		"greatPersonPoints": {"Great Engineer": 2},
 		"uniques": ["[+15]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
-			"Gain a free [Castle] [in this city]"],
+			"Gain a free [Castle] [in this city]",
+			"Provides [5] [Tourism performance]",
+			
+			
+			],
 		"requiredTech": "Gunpowder",
 		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.' - Yamamoto Tsunetomo"
 	},*/

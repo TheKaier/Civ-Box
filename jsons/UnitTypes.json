@@ -17,6 +17,7 @@
     "uniques": [
         "Consumes [1] [Army size]",
         "[This Unit] loses [100] movement <upon being promoted>",
+        "[This Unit] takes [10] damage <upon entering a [Abatis] tile>",
     ]
 },
 {
@@ -27,6 +28,7 @@
         "[+33]% Strength <vs [Light Cavalry] units>",
         "[+33]% Strength <vs [Heavy Cavalry] units>",
         "[This Unit] loses [100] movement <upon being promoted>",
+        "[This Unit] takes [10] damage <upon entering a [Abatis] tile>",
     ]
 },
 {
@@ -35,6 +37,7 @@
     "uniques": [
         "Consumes [1] [Army size]",
         "[This Unit] loses [100] movement <upon being promoted>",
+        "[This Unit] takes [10] damage <upon entering a [Abatis] tile>",
     ]
 },
 {
@@ -45,6 +48,7 @@
         "[+33]% Strength <vs [Archers] units> <when attacking>",
         "[-33]% Strength <vs cities> <when attacking>",
         "[This Unit] loses [100] movement <upon being promoted>",
+        "[This Unit] takes [15] damage <upon entering a [Abatis] tile>",
     ]
 },
 {
@@ -54,6 +58,7 @@
         "Consumes [1] [Army size]",
         "[+33]% Strength <vs [Archers] units> <when defending>",
         "[This Unit] loses [100] movement <upon being promoted>",
+        "[This Unit] takes [15] damage <upon entering a [Abatis] tile>",
     ]
 },
 {
@@ -63,6 +68,7 @@
         "Consumes [2] [Army size]",
         "[-50]% Strength <vs [Swordsmen] units> <when defending>",
         "[This Unit] loses [100] movement <upon being promoted>",
+        "[This Unit] takes [5] damage <upon entering a [Abatis] tile>",
     ]
 },
 {
@@ -71,6 +77,7 @@
     "uniques": [
         "Consumes [1] [Army size]",
         "[This Unit] loses [100] movement <upon being promoted>",
+        "[This Unit] takes [10] damage <upon entering a [Abatis] tile>",
     ]
 },
 {

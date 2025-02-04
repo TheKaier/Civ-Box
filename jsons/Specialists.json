@@ -7,7 +7,7 @@
 	},
 	{
 		"name":"Merchant",//大商
-		"gold":3,
+		"gold":4,
 		"greatPersonPoints": {"Great Merchant":3},
 		"color": [255,215,0]
 	},

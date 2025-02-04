@@ -619,10 +619,42 @@
 		"Not shown on world screen",//不显示
 		]
 	},
-	
-	
-	
-	
+	{
+		"name": "Tourism performance",//旅游业绩
+		"resourceType": "Strategic",
+		"uniques": [
+		//"Cannot be traded"//不能交易
+		"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
+	{
+		"name": "Culture Hegemony point",//文化霸权点
+		"resourceType": "Strategic",
+		"uniques": [
+		"Cannot be traded"//不能交易
+		//"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
+	{
+		"name": "Imperial Covenant Chief",//帝国盟约正符
+		"resourceType": "Strategic",
+		"uniques": [
+		//"Cannot be traded"//不能交易
+		//"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
+	{
+		"name": "Imperial Covenant Deputy",//帝国盟约副符
+		"resourceType": "Strategic",
+		"uniques": [
+		//"Cannot be traded"//不能交易
+		//"Stockpiled"//库存
+		"Not shown on world screen",//不显示
+		]
+	},
 	
 	
 	

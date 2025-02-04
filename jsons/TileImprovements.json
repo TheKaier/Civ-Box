@@ -221,7 +221,10 @@
 		"name": "Landmark",
 		"terrainsCanBeBuiltOn": ["Land"],
 		"culture": 6,
-		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]"]
+		"uniques": ["Great Improvement", "Removes removable features when built", "Pillaging this improvement yields approximately [+20 Gold]",
+		"Provides [3] [Tourism performance]",
+		
+		]
 	},
 	{
 		"name": "Manufactory",
@@ -292,6 +295,26 @@
 		"terrainsCanBeBuiltOn": ["Land"],
 		"uniques": ["Unpillagable", "Unbuildable"],
         "civilopediaText": [{"text":"Home to uncivilized barbarians, will spawn a hostile unit from time to time"}]
+	},
+	
+	
+	
+	
+	
+	//
+	//
+	//
+	//
+	//
+	{
+		"name": "Abatis",//拒马
+		"terrainsCanBeBuiltOn": ["Land"],
+		"turnsToBuild": 4,
+		"techRequired": "Ironware",
+		"uniques": [
+			"Gives a defensive bonus of [-10]%",
+			"Can be built just outside your borders",
+		]
 	},
 
 ]

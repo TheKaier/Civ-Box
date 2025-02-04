@@ -9,9 +9,9 @@
                 "[-20]% [Production] [in all cities] <for [5] turns>",
                 "[-33]% [Science] [in all cities] <for [5] turns>",
                 "[-33]% [Gold] [in all cities] <for [5] turns>",
-                "[+25]% Unhappiness from [Population] [in all cities] <for [5] turns>",
-                "Instantly provides [7] [Confrontation value] <hidden from users>",
-                "Rebel units may spawn <for [7] turns>",
+                "[+25]% Unhappiness from [Population] [in all cities] <for [7] turns>",
+                "Instantly provides [10] [Confrontation value] <hidden from users>",
+                "Rebel units may spawn <for [10] turns>",
                 ],
             },
             {
@@ -23,8 +23,28 @@
                 "Cannot build [Settler] units <for [7] turns>",
                 "Nullifies Growth [in all cities] <for [7] turns>",
                 "[-15]% Strength <for [7] turns>",
-                "Instantly provides [7] [Confrontation value] <hidden from users>",
-                "Rebel units may spawn <for [7] turns>",
+                "Instantly provides [10] [Confrontation value] <hidden from users>",
+                "Rebel units may spawn <for [10] turns>",
+                ],
+            },
+            {
+                "text": "Find out who's behind this!",
+                "uniques": [
+                "[-35]% [Production] [in all cities] <for [5] turns>",
+                "[-25]% [Science] [in all cities] <for [5] turns>",
+                "[-35]% [Gold] [in all cities] <for [5] turns>",
+                "[-15]% Strength <for [7] turns>",
+                "[+25]% Unhappiness from [Population] [in all cities] <for [5] turns>",
+                
+                "[+25]% [Production] [in all cities] <for [5] turns><when at war>",
+                "[+20]% [Science] [in all cities] <for [5] turns><when at war>",
+                "[+30]% [Gold] [in all cities] <for [5] turns>",
+                "[+15]% Strength <for [7] turns> <when at war>",
+                "[-25]% Unhappiness from [Population] [in all cities] <for [7] turns> <when at war>",
+                
+                
+                "Instantly provides [10] [Confrontation value] <hidden from users>",
+                "Rebel units may spawn <for [10] turns>",
                 ],
             },
         ]
